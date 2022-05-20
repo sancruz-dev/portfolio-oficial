@@ -1,5 +1,3 @@
-import './assets/styles/styles.css'
-
 import { Header } from './components/Header';
 import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';

@@ -9,18 +9,18 @@ export function Home() {
       <div className="home__container container grid">
          <div className="home__data">
             <span className="home__greeting">
-               {t("hello")}
+               {t('hello')}
             </span>
             <h1 className="home__name">Sanmir Cruz</h1>
             <h3 className="home__education">
-               Systems developer
+               {t('systemsDev')}
             </h3>
 
             <div className="home__buttons">
                <a download="" href={cv} className="button button--ghost">
-                  Baixar CV
+                  {t('baixarCV_btn')}
                </a>
-               <a href="#about" className="button">Sobre mim</a>
+               <a href="#about" className="button">{t("sobreMim_btn")}</a>
             </div>
          </div>
 
@@ -29,20 +29,20 @@ export function Home() {
          </div>
 
          <div className="home__social">
-            <a href="https://www.linkedin.com/" target="_blank" className="home__social-link">
+            <a href="https://www.linkedin.com/" target="_blank" className="home__social-link" title='ícone do LinkedIn'>
                <i className='bx bxl-linkedin-square'></i>
             </a>
-            <a href="https://www.github.com/" target="_blank" className="home__social-link">
+            <a href="https://www.github.com/" target="_blank" className="home__social-link" title='ícone do Github'>
                <i className='bx bxl-github'></i>
             </a>
-            <a href="https://www.dribbble.com/" target="_blank" className="home__social-link">
+            <a href="https://www.dribbble.com/" target="_blank" className="home__social-link" title='ícone da dribble'>
                <i className='bx bxl-dribbble'></i>
             </a>
          </div>
 
          <a href="#about" className="home__scroll">
             <i className='bx bx-mouse home__scroll-icon'></i>
-            <span className="home__scroll-name">Scroll Down</span>
+            <span className="home__scroll-name">{t('scrollDown')}</span>
          </a>
 
       </div>

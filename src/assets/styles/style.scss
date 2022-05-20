@@ -1,0 +1,19 @@
+@import './helpers/vars'; 
+@import './helpers/base';
+
+@import './design/theme-buttons-reusable/theme';
+@import './design/theme-buttons-reusable/reusable';
+@import './design/theme-buttons-reusable/buttons';
+
+@import './design/static/header-nav';
+@import './design/static/footer';
+
+@import './design/sections/home';
+@import './design/sections/about';
+@import './design/sections/skills';
+@import './design/sections/services';
+@import './design/sections/work';
+@import './design/sections/testimonial';
+@import './design/sections/contact';
+
+@import './design/breakpoints'; 

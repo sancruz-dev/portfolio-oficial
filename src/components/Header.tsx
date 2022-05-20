@@ -41,12 +41,10 @@ export function Header() {
       setHandleMoonIcon('active')
    }
 
-   const { t } = useTranslation();
-
    return <>
       <header className={`header ${handleHeader}`} id="header">
          <nav className="nav container">
-            <a href="#" className="nav__logo">{t("sanlegal")}</a>
+            <a href="#" className="nav__logo">SanCruz</a>
 
             <div className="nav__menu">
                <ul className="nav__list">

@@ -41,8 +41,10 @@ export function ChangeLanguageBtn() {
          >
             <img
                src={LanguageOption.flag}
-               title={LanguageOption.name}
                alt={LanguageOption.name}
+               title={
+                  LanguageOption.value === 'pt' ? 'Mudar idioma para INGLÊS' : 'Change language to PORTUGUESE'
+               }
                className={LanguageOption.value === 'pt' 
                   ? `icon-lang br ${handleBrIcon}` : `icon-lang eua ${handleEngIcon}`}
             />

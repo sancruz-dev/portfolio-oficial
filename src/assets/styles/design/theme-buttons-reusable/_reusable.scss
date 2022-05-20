@@ -1,0 +1,35 @@
+.container {
+   max-width: 968px;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.grid {
+   display: grid;
+   gap: 1.25rem;
+}
+
+.main {
+   overflow: hidden;
+}
+
+.section {
+   padding: 4.5rem 0 1rem;
+}
+
+.section__title, 
+.section__subtitle {
+   text-align: center;
+}
+
+.section__title {
+   font-size: var(--h2-font-size);
+   color: var(--first-color);
+   margin-bottom: 2rem;
+}
+
+.section__subtitle {
+   display: block;
+   font-size: var(--smaller-font-size);
+   color: var(--text-color-light);
+}
