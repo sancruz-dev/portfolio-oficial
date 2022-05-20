@@ -1,13 +1,20 @@
 import cv from '../../assets/pdf/Sanmir Cruz - CV.pdf'
 import sanHome from '../../assets/img/san-home.png'
+import { useTranslation } from 'react-i18next'
 
 export function Home() {
+   const { t } = useTranslation();
+   
    return <section className="home section" id="home">
       <div className="home__container container grid">
          <div className="home__data">
-            <span className="home__greeting">Olá! Eu sou</span>
+            <span className="home__greeting">
+               {t("hello")}
+            </span>
             <h1 className="home__name">Sanmir Cruz</h1>
-            <h3 className="home__education">Systems developer</h3>
+            <h3 className="home__education">
+               Systems developer
+            </h3>
 
             <div className="home__buttons">
                <a download="" href={cv} className="button button--ghost">

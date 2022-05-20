@@ -29,7 +29,7 @@
 .light-theme .active-work,
 .light-theme .footer__title,
 .light-theme .footer__link,
-.light-theme .footer__copy
+.light-theme .footer__copy 
 {
   color: var(--title-color);
 }
@@ -254,35 +254,46 @@
   height: calc(32px - 4px);
 }
 
-.language-theme .icons-language img.icon-lang
+/* ========= icons-language */
+
+.icons-language img.icon-lang,
+.icons-language .icon-lang.br.down
 {
   position: absolute;
   margin: -1rem 0 0 -6rem;
   transform: scale(.8);
-  transform: translateY(-5rem);
+  transform: translateY(0rem);
   cursor: pointer;
   transition: .5s;
 }
 
-
-.language-theme .icons-language .icon-lang.br.visible
-{ position: absolute; transform: translateY(0); }
-
-.language-theme .icons-language .icon-lang.eua.visible
-{ position: absolute; transform: translateY(0); }
+.icons-language .icon-lang.br 
+{ position: absolute; transform: translateY(-5rem); }
 
 
+.icons-language .icon-lang.br.up,
+.icons-language .icon-lang.eua.up
+{ position: absolute; transform: translateY(-5rem); }
+
+
+/* ========= theme-icons */
+
+.theme-icons .bx.bx-moon, 
+.theme-icons .bx.bx-sun.disable
+{ display: none; }
+
+.theme-icons .bx.bx-moon.active 
+{ display: block; }
 
 .change-theme {
+  position: relative;
   font-size: 1.25rem;
   transition: .3s;
   padding: .5rem;
   cursor: pointer;
-
   
   &:hover { color: var(--first-color); }
 }
-
 
 
 /*=============== HOME ===============*/

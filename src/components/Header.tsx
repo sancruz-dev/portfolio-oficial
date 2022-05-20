@@ -1,11 +1,52 @@
-import euaIcon from '../assets/img/eua-icon.png'
-import brasilIcon from '../assets/img/brasil-icon.png'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { ChangeLanguageBtn } from './ChangeLanguageBtn'
+
 
 export function Header() {
+   const [handleHeader, setHandleHeader] = useState('')
+   const [handleSunIcon, setHandleSunIcon] = useState('')
+   const [handleMoonIcon, setHandleMoonIcon] = useState('')
+
+   // ========= CHANGE BACKGROUND HEADER =========
+   window.addEventListener('scroll', () => {
+      scrollY >= 50
+         ? setHandleHeader('scroll-header')
+         : setHandleHeader('')
+   })
+
+
+   // ========= CHANGE THEME LIGHT/DARK =========
+
+   const lightTheme = 'light-theme'
+   const selectedTheme = localStorage.getItem('selected-theme')
+   const getCurrentTheme = () =>
+      document.body.classList.contains(lightTheme) ? 'dark' : 'light'
+
+   if (selectedTheme) {
+      document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+   }
+
+   function darkActive() {
+      document.body.classList.toggle(lightTheme)
+      localStorage.setItem('selected-theme', getCurrentTheme())
+      setHandleSunIcon('active')
+      setHandleMoonIcon('disable')
+   }
+
+   function lightActive() {
+      document.body.classList.toggle(lightTheme)
+      localStorage.setItem('selected-theme', getCurrentTheme())
+      setHandleSunIcon('disable')
+      setHandleMoonIcon('active')
+   }
+
+   const { t } = useTranslation();
+
    return <>
-      <header className="header" id="header">
+      <header className={`header ${handleHeader}`} id="header">
          <nav className="nav container">
-            <a href="#" className="nav__logo">SanCruz</a>
+            <a href="#" className="nav__logo">{t("sanlegal")}</a>
 
             <div className="nav__menu">
                <ul className="nav__list">
@@ -50,24 +91,27 @@ export function Header() {
                   </li>
                </ul>
             </div>
-
+ 
             <div className="language-theme">
-
                {/* <!-- Theme change button --> */}
-               <i className='bx bx-moon change-theme' id='theme-button'></i>
-
-               <div className="icons-language">
-                  {/* <!-- Language change buttons --> */}
-                  <img className="icon-lang eua visible" src={euaIcon} alt="ícone dos Estdados Unidos da América" title="Alterar idioma para en-us" />
-                  <img className="icon-lang br" src={brasilIcon} alt="Ícone do Brasil" title="Alterar idioma para pt-br" />
-
-
+               <div className='theme-icons'>
+                  <i className={`bx bx-moon change-theme ${handleMoonIcon}`}
+                     onClick={darkActive}
+                     id='theme-button'>
+                  </i>
+                  <i className={`bx bx-sun change-theme ${handleSunIcon}`}
+                     onClick={lightActive}
+                     id='theme-button'>
+                  </i>
                </div>
+
+               <ChangeLanguageBtn/>
             </div>
-
-
          </nav>
-
       </header>
    </>
 }
+
+
+
+

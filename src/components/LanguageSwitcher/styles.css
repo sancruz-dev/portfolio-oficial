@@ -1,0 +1,26 @@
+.language-switcher {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 32%;
+}
+
+.language-switcher > button {
+   cursor: pointer;
+   background: none;
+   border: none;
+   width: 70px;
+   height: 70px;
+}
+
+.language-switcher .container-img-span
+{
+   color: white;
+   font-size: .6em;
+}
+
+.language-switcher > button > img {
+   padding: 0 2rem;
+   justify-content: space-between;
+}
+
