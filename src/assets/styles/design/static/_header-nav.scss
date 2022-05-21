@@ -7,7 +7,7 @@
   z-index: var(--z-fixed);
   transition: .4s; /* light mode animatio */
 } 
-.nav
+.nav 
 {
   height: var(--header-height);
   display: flex;
@@ -143,41 +143,52 @@
   border-bottom-right-radius: 1.5rem;
 } 
 
+/* ========= language-theme */
+
 .language-theme
 {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
-.language-theme > .icons-language img
-{
-  width: calc(32px - 4px);
-  height: calc(32px - 4px);
-}
 
 /* ========= icons-language */
+
+.icons-language .icon-lang
+{
+  height: 1.7rem;
+  margin-right: .5rem;
+}
 
 .icons-language img.icon-lang,
 .icons-language .icon-lang.br.down
 {
-  position: absolute;
-  margin: -1rem 0 0 -6rem;
-  transform: scale(.8);
-  transform: translateY(0rem);
+  transform: translateY(-.15rem);
   cursor: pointer;
   transition: .5s;
 }
+.icons-language .icon-lang.br.down
+{
+  transform: translateY(-1rem);
+}
 
 .icons-language .icon-lang.br 
-{ position: absolute; transform: translateY(-5rem); }
+{ position: absolute; }
 
 
+.icons-language .icon-lang.br,
 .icons-language .icon-lang.br.up,
 .icons-language .icon-lang.eua.up
-{ position: absolute; transform: translateY(-5rem); }
+{ transform: translateY(-5rem); }
 
 
 /* ========= theme-icons */
+
+.theme-icons
+{
+  padding-right: 2rem;
+}
 
 .theme-icons .bx.bx-moon, 
 .theme-icons .bx.bx-sun.disable
@@ -188,9 +199,8 @@
 
 .change-theme {
   position: relative;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   transition: .3s;
-  padding: .5rem;
   cursor: pointer;
   
   &:hover { color: var(--first-color); }

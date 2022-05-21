@@ -2,7 +2,7 @@
 {
   position: relative;
   row-gap: 4.5rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .home__data
 { text-align: center; }
@@ -63,7 +63,7 @@
 .home__social
 {
   bottom: 5rem;
-  left: 0;
+  left: 1rem;
   display: grid;
   row-gap: .5rem;
 }
@@ -94,7 +94,7 @@
 .home__scroll
 {
   color: var(--first-color);
-  right: -1.5rem;
+  right: 0;
   bottom: 4rem;
   display: grid;
   row-gap: 2.25rem;

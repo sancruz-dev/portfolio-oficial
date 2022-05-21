@@ -91,7 +91,6 @@ export function Header() {
             </div>
  
             <div className="language-theme">
-               {/* <!-- Theme change button --> */}
                <div className='theme-icons'>
                   <i className={`bx bx-moon change-theme ${handleMoonIcon}`}
                      onClick={darkActive}

@@ -11,7 +11,8 @@
     "i18next": "^21.8.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-i18next": "^11.16.9"
+    "react-i18next": "^11.16.9",
+    "swiper": "^8.1.5"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",

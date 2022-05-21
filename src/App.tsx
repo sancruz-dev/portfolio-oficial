@@ -1,3 +1,6 @@
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 import { Header } from './components/Header';
 import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
@@ -11,13 +14,15 @@ import { Footer } from './components/Footer';
 function App() {
   return <>
     <Header />
-    <Home />
-    <About />
-    <Skills />
-    <Services />
-    <Work />
-    <Testimonials />
-    <Contact />
+    <main className='main'>
+      <Home />
+      <About />
+      <Skills />
+      <Services />
+      <Work />
+      <Testimonials />
+      <Contact />
+    </main>
     <Footer />
   </>
 }

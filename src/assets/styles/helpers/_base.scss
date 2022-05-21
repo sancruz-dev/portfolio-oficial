@@ -24,9 +24,6 @@ body {
    transition: .4s; /* for light mode animation */
 }
  
-section
-{ overflow: hidden; }
-
 h1, h2, h3 {
    color: var(--title-color);
    font-weight: var(--font-semibold);
