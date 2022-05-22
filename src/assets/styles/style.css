@@ -844,20 +844,24 @@ the website, in light theme */
   width: 50%;
 }
 
-.skills__bdsql {
+.skills__postgrebd {
   width: 60%;
 }
 
-.skills__spring {
-  width: 50%;
-}
-
-.skills__node {
+.skills__bdsql {
   width: 40%;
 }
 
+.skills__spring {
+  width: 60%;
+}
+
+.skills__tsorm {
+  width: 70%;
+}
+
 .skills__java {
-  width: 30%;
+  width: 50%;
 }
 
 .skills__php {
@@ -877,10 +881,14 @@ the website, in light theme */
 }
 
 .skills__gitgithub {
-  width: 70%;
+  width: 80%;
 }
 
 .skills__cicd {
+  width: 65%;
+}
+
+.skills__performance {
   width: 60%;
 }
 
@@ -892,8 +900,8 @@ the website, in light theme */
   width: 40%;
 }
 
-.skills__bw {
-  width: 30%;
+.skills__rn {
+  width: 70%;
 }
 
 .skills__close .skills__list {

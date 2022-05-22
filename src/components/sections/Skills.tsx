@@ -1,13 +1,64 @@
+import { useState } from "react"
+
 export function Skills() {
+   const [frontendClass, setFrontendClass] = useState('skills__open')
+   const [backendClass, setBackendClass] = useState('skills__close')
+   const [designClass, setDesignClass] = useState('skills__close')
+   const [outrasClass, setOutrasClass] = useState('skills__close')
+
+   function toggleSkillContent1() {
+      if (frontendClass === 'skills__close') {
+         setFrontendClass('skills__open')
+         setBackendClass('skills__close')
+         setDesignClass('skills__close')
+         setOutrasClass('skills__close')
+      } else {
+         setFrontendClass('skills__close')
+      }
+   }
+   
+   function toggleSkillContent2() {
+      if (backendClass === 'skills__close') {
+         setBackendClass('skills__open')
+         setFrontendClass('skills__close')
+         setDesignClass('skills__close')
+         setOutrasClass('skills__close')
+      } else {
+         setBackendClass('skills__close')
+      }
+   }
+   
+   function toggleSkillContent3() {
+      if (designClass === 'skills__close') {
+         setDesignClass('skills__open')
+         setBackendClass('skills__close')
+         setFrontendClass('skills__close')
+         setOutrasClass('skills__close')
+      } else {
+         setDesignClass('skills__close')
+      }
+   }
+   
+   function toggleSkillContent4() {
+      if (outrasClass === 'skills__close') {
+         setOutrasClass('skills__open')
+         setBackendClass('skills__close')
+         setFrontendClass('skills__close')
+         setDesignClass('skills__close')
+      } else {
+         setOutrasClass('skills__close')
+      }
+   }
+
    return <section className="skills section" id="skills">
       <span className="section__subtitle">Minha experiência</span>
       <h2 className="section__title">Nível Técnico</h2>
 
       <div className="skills__container container grid">
          <div>
-            {/* <!--=== SKILLS 1 ===--> */}
-            <div className="skills__content skills__open">
-               <div className="skills__header">
+            {/* <!--==================== SKILLS 1 ====================--> */}
+            <div className={`skills__content ${frontendClass}`}>
+               <div className="skills__header" onClick={toggleSkillContent1}>
                   <i className='bx bx-code-alt skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Frontend</h3>
@@ -60,10 +111,9 @@ export function Skills() {
 
                </div>
             </div>
-
-            {/* <!--=== SKILLS 2 ===--> */}
-            <div className="skills__content skills__close">
-               <div className="skills__header">
+            {/* <!--==================== SKILLS 2 ====================--> */}
+            <div className={`skills__content ${backendClass}`}>
+               <div className="skills__header" onClick={toggleSkillContent2}>
                   <i className='bx bx-server skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Backend</h3>
@@ -129,9 +179,9 @@ export function Skills() {
          </div>
 
          <div>
-            {/* <!--=== SKILLS 3 ===--> */}
-            <div className="skills__content skills__close">
-               <div className="skills__header">
+            {/* <!--==================== SKILLS 3 ====================--> */}
+            <div className={`skills__content ${designClass}`}>
+               <div className="skills__header" onClick={toggleSkillContent3}>
                   <i className='bx bx-palette skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Designer</h3>
@@ -173,10 +223,9 @@ export function Skills() {
                   </div>
                </div>
             </div>
-
-            {/* <!--=== SKILLS 4 ===--> */}
-            <div className="skills__content skills__close">
-               <div className="skills__header">
+            {/* <!--==================== SKILLS 4 ====================--> */}
+            <div className={`skills__content ${outrasClass}`}>
+               <div className="skills__header" onClick={toggleSkillContent4}>
                   <i className='bx bx-dots-horizontal-rounded skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Outros</h3>
