@@ -9,10 +9,13 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.2",
+    "express": "^4.18.1",
+    "framer-motion": "^6.3.4",
     "i18next": "^21.8.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-i18next": "^11.16.9",
+    "react-router-dom": "^6.3.0",
     "recoil": "^0.7.3-alpha.2",
     "swiper": "^8.1.5"
   },

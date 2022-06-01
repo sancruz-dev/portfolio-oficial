@@ -849,11 +849,15 @@ the website, in light theme */
 }
 
 .skills__bdsql {
-  width: 40%;
+  width: 50%;
 }
 
 .skills__spring {
-  width: 60%;
+  width: 70%;
+}
+
+.skills__node {
+  width: 40%;
 }
 
 .skills__tsorm {
@@ -865,19 +869,19 @@ the website, in light theme */
 }
 
 .skills__php {
-  width: 30%;
-}
-
-.skills__figma {
-  width: 50%;
-}
-
-.skills__canva {
   width: 40%;
 }
 
+.skills__figma {
+  width: 65%;
+}
+
+.skills__canva {
+  width: 60%;
+}
+
 .skills__photoshop {
-  width: 30%;
+  width: 40%;
 }
 
 .skills__gitgithub {

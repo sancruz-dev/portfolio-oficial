@@ -127,6 +127,16 @@ export function Skills() {
 
                   <div className="skills__data">
                      <div className="skills__titles">
+                        <h3 className="skills__name">Spring</h3>
+                        <span className="skills__number">mediano/avançado</span>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__spring"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
                         <h3 className="skills__name">BD e SQL</h3>
                         <span className="skills__number">mediano</span>
                      </div>
@@ -137,11 +147,11 @@ export function Skills() {
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Spring</h3>
+                        <h3 className="skills__name">Java</h3>
                         <span className="skills__number">mediano</span>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__spring"></span>
+                        <span className="skills__percentage skills__java"></span>
                      </div>
                   </div>
 
@@ -152,16 +162,6 @@ export function Skills() {
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__node"></span>
-                     </div>
-                  </div>
-
-                  <div className="skills__data">
-                     <div className="skills__titles">
-                        <h3 className="skills__name">Java</h3>
-                        <span className="skills__number">básico/mediano</span>
-                     </div>
-                     <div className="skills__bar">
-                        <span className="skills__percentage skills__java"></span>
                      </div>
                   </div>
 
@@ -195,7 +195,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Figma</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">mediano/avançado</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__figma"></span>
@@ -205,7 +205,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Canva</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">mediano</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__canva"></span>
