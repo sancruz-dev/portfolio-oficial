@@ -1,5 +1,5 @@
-import cv from '../../assets/pdf/Sanmir Cruz - CV.pdf'
-import sanHome from '../../assets/img/san-home.png'
+import cv from '../../../assets/pdf/Sanmir Cruz - CV.pdf'
+import sanHome from '../../../assets/img/san-home.png'
 import { useTranslation } from 'react-i18next'
 
 export function Home() {

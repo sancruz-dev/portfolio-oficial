@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { ChangeLanguageBtn } from './ChangeLanguageBtn'
+import { ChangeLanguageBtn } from '../ChangeLanguageBtn'
+import { NavbarMenu } from './NavbarMenu'
 
 
 export function Header() {
@@ -45,49 +46,7 @@ export function Header() {
          <nav className="nav container">
             <a href="#" className="nav__logo">SanCruz</a>
 
-            <div className="nav__menu">
-               <ul className="nav__list">
-                  <li className="nav__item">
-                     <a href="#home" className="nav__link active-link">
-                        <div className="tab-item-inner">
-                           <i className='bx bx-home-alt'></i>
-                        </div>
-                     </a>
-                  </li>
-
-                  <li className="nav__item">
-                     <a href="#about" className="nav__link">
-                        <div className="tab-item-inner">
-                           <i className='bx bx-user'></i>
-                        </div>
-                     </a>
-                  </li>
-
-                  <li className="nav__item">
-                     <a href="#skills" className="nav__link">
-                        <div className="tab-item-inner">
-                           <i className='bx bx-book'></i>
-                        </div>
-                     </a>
-                  </li>
-
-                  <li className="nav__item">
-                     <a href="#work" className="nav__link">
-                        <div className="tab-item-inner">
-                           <i className='bx bx-briefcase-alt-2'></i>
-                        </div>
-                     </a>
-                  </li>
-
-                  <li className="nav__item">
-                     <a href="#contact" className="nav__link">
-                        <div className="tab-item-inner">
-                           <i className='bx bx-message-square-detail'></i>
-                        </div>
-                     </a>
-                  </li>
-               </ul>
-            </div>
+            <NavbarMenu />
  
             <div className="language-theme">
                <div className='theme-icons'>

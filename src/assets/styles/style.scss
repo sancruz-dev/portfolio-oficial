@@ -1,19 +1,19 @@
-@import './helpers/vars';
-@import './helpers/base';
+@import './base/start/vars';
+@import './base/start/reset';
 
-@import './design/theme-buttons-reusable/theme';
-@import './design/theme-buttons-reusable/reusable';
-@import './design/theme-buttons-reusable/buttons';
+@import './base/theme';
+@import './base/reusable';
+@import './base/buttons';
 
-@import './design/static/header-nav';
-@import './design/static/footer';
+@import '../../components/Header/header';
+@import '../../components/Footer/footer';
 
-@import './design/sections/home';
-@import './design/sections/about';
-@import './design/sections/skills';
-@import './design/sections/services';
-@import './design/sections/work';
-@import './design/sections/testimonial';
-@import './design/sections/contact';
+@import '../../components/sections/Home/home';
+@import '../../components/sections/About/about';
+@import '../../components/sections/Skills/skills';
+@import '../../components/sections/Services/services';
+@import '../../components/sections/Work/work';
+@import '../../components/sections/Testimonials/testimonials';
+@import '../../components/sections/Contact/contact';
 
-@import './design/breakpoints'; 
+@import './helpers/breakpoints';

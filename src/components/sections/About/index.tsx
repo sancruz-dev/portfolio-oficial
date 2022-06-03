@@ -1,4 +1,4 @@
-import sanAbout from '../../assets/img/san-about.png'
+import sanAbout from '../../../assets/img/san-about.png'
 
 export function About() {
    return <section className="about section" id="about">

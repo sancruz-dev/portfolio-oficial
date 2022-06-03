@@ -110,7 +110,7 @@
 
     }
     
-    &.active-link .tab-item-inner {
+    &.active .tab-item-inner {
       transform: translateY(-28px);
       z-index: 2;
       color: var(--title-color);
@@ -125,7 +125,7 @@
   }
 }
 /* Active link */
-.active-link
+.nav__item .active
 {
   background: linear-gradient(180deg,
     hsla(var(--first-hue), var(--sat), var(--lig), 1),

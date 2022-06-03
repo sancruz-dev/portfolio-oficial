@@ -400,7 +400,7 @@ the website, in light theme */
   transition: .4s;
 }
 
-.nav__list .nav__link.active-link .tab-item-inner {
+.nav__list .nav__link.active .tab-item-inner {
   -webkit-transform: translateY(-28px);
           transform: translateY(-28px);
   z-index: 2;
@@ -416,7 +416,7 @@ the website, in light theme */
 }
 
 /* Active link */
-.active-link {
+.nav__item .active {
   background: -webkit-gradient(linear, left top, left bottom, from(hsla(var(--first-hue), var(--sat), var(--lig), 1)), to(hsla(var(--first-hue), var(--sat), var(--lig), 0.2)));
   background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
   -webkit-box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
