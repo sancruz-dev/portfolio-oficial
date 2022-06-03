@@ -318,55 +318,6 @@ the website, in light theme */
           align-items: center;
 }
 
-.nav__list .tab-indicator {
-  position: absolute;
-  background-color: var(--body-color);
-  width: var(--tab-indicator-width);
-  height: var(--tab-indicator-height);
-  border-radius: 0 0 50px 50px;
-  z-index: 1;
-  left: .85rem;
-  top: 0;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-}
-
-.nav__list .tab-indicator .tab-indicator-left,
-.nav__list .tab-indicator .tab-indicator-right {
-  position: absolute;
-  top: .2px;
-  width: 30%;
-  height: 50%;
-  background-color: var(--body-color);
-}
-
-.nav__list .tab-indicator .tab-indicator-left:after,
-.nav__list .tab-indicator .tab-indicator-right:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
-  display: block;
-}
-
-.nav__list .tab-indicator .tab-indicator-left {
-  left: -11.5px;
-}
-
-.nav__list .tab-indicator .tab-indicator-left:after {
-  border-radius: 0 25px 0 0;
-}
-
-.nav__list .tab-indicator .tab-indicator-right {
-  right: -11.5px;
-}
-
-.nav__list .tab-indicator .tab-indicator-right:after {
-  border-radius: 25px 0 0 0;
-}
-
 .nav__list .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,6 +331,7 @@ the website, in light theme */
   font-size: 1.25rem;
   padding: .4rem;
   color: var(--text-color);
+  /* Active link */
 }
 
 .nav__list .nav__link .tab-item-inner {
@@ -400,9 +352,33 @@ the website, in light theme */
   transition: .4s;
 }
 
+.nav__list .nav__link:hover {
+  z-index: 2;
+  color: var(--title-color);
+  -webkit-box-shadow: 0 -5px 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
+          box-shadow: 0 -5px 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.nav__list .nav__link.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(hsla(var(--first-hue), var(--sat), var(--lig), 1)), to(hsla(var(--first-hue), var(--sat), var(--lig), 0.2)));
+  background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
+  -webkit-box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
+          box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
+  color: var(--title-color);
+  border-radius: 2rem 2rem 0 0;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .nav__list .nav__link.active .tab-item-inner {
-  -webkit-transform: translateY(-28px);
-          transform: translateY(-28px);
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
   z-index: 2;
   color: var(--title-color);
   -webkit-box-shadow: 0 -5px 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
@@ -413,16 +389,6 @@ the website, in light theme */
   transition: .4s;
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
-}
-
-/* Active link */
-.nav__item .active {
-  background: -webkit-gradient(linear, left top, left bottom, from(hsla(var(--first-hue), var(--sat), var(--lig), 1)), to(hsla(var(--first-hue), var(--sat), var(--lig), 0.2)));
-  background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
-  -webkit-box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
-          box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
-  color: var(--title-color);
-  border-radius: 2rem 2rem 0 0;
 }
 
 /* Change background header */
@@ -1077,6 +1043,15 @@ the website, in light theme */
   padding: .25rem .75rem;
   font-weight: var(--font-medium);
   border-radius: .5rem;
+}
+
+.recent-movies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
 
 .work__card {

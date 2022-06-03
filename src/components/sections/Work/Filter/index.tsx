@@ -4,20 +4,20 @@ type Props = {
    setActiveGenre: Dispatch<SetStateAction<number>>,
    setFiltered: Dispatch<SetStateAction<never[]>>,
    activeGenre: number,
-   popular: never[]
+   recent: never[]
 }
 
 export function Filter({
    setActiveGenre, setFiltered,
-   activeGenre, popular }: Props) {
+   activeGenre, recent }: Props) {
 
    useEffect(() => {
       if (activeGenre === 0) {
-         setFiltered(popular)
+         setFiltered(recent)
          return
       }
 
-      const filtered = popular.filter((projeto) =>
+      const filtered = recent.filter((projeto) =>
          projeto.genre_ids.includes(activeGenre)
       )
 
@@ -27,27 +27,27 @@ export function Filter({
 
    return <>
       <div className="work__filters">
-         <span 
+         <button 
             onClick={() => setActiveGenre(0)} 
             className={activeGenre === 0 
                ? 'work__item active-work' 
                : 'work__item'}>
             All
-         </span>
-         <span 
+         </button>
+         <button 
             onClick={() => setActiveGenre(1)} 
             className={activeGenre === 1 
                ? 'work__item active-work' 
                : 'work__item'}>
             Web
-         </span>
-         <span 
+         </button>
+         <button 
             onClick={() => setActiveGenre(2)} 
             className={activeGenre === 2 
                ? 'work__item active-work' 
                : 'work__item'}>
             Design
-         </span>
+         </button>
       </div>
    </>
 }

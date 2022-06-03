@@ -4,7 +4,7 @@ type Props = {
    projeto: any
 }
 
-export function Projeto({ projeto }: Props) {
+export function ProjectContainer({ projeto }: Props) {
    return (
       <div className="work__container container grid">
          <motion.div

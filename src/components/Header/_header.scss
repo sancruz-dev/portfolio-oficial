@@ -41,54 +41,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .tab-indicator {
-    position: absolute;
-    background-color: var(--body-color);
-    width: var(--tab-indicator-width);
-    height: var(--tab-indicator-height);
-    border-radius: 0 0 50px 50px;
-    z-index: 1;
-    left: .85rem;
-    top: 0;
-    transition: transform .3s ease-out;
-    
-    .tab-indicator-left,
-    .tab-indicator-right {
-      position: absolute;
-      top: .2px;
-      width: 30%; 
-      height: 50%;
-
-
-      background-color: var(--body-color);
-      
-      &:after {
-        content: "";
-        width: 100% ;
-        height: 100%;
-        background-color: hsla(var(--second-hue), 32%, 16%, .8);
-        
-        display: block;
-    }
-  }
-
-    .tab-indicator-left {
-        left: -11.5px;
-       
-      &:after {
-          border-radius: 0 25px 0 0;
-      }
-    }
- 
-    .tab-indicator-right {
-      right: -11.5px;
-      
-        &:after {
-          border-radius: 25px 0 0 0 ;
-      }
-    }
-  }
   
   .nav__link {
     display: flex;
@@ -107,11 +59,32 @@
       align-items: center;
       justify-content: center;
       transition: .4s;
-
     }
     
+    &:hover {
+      z-index: 2;
+      color: var(--title-color);
+      box-shadow: 0 -5px 16px 
+        hsla(var(--first-hue), var(--sat), var(--lig), .4);
+      transition: .4s;
+      transition-delay: .1s;
+    }
+    
+    /* Active link */
+    &.active
+    {
+      background: linear-gradient(180deg,
+        hsla(var(--first-hue), var(--sat), var(--lig), 1),
+        hsla(var(--first-hue), var(--sat), var(--lig), .2));
+      box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+      color: var(--title-color);
+      border-radius: 2rem 2rem 0 0;
+      transform: translateY(1rem);
+      transition: .5s;
+    }
+
     &.active .tab-item-inner {
-      transform: translateY(-28px);
+      transform: translateY(-2rem);
       z-index: 2;
       color: var(--title-color);
       box-shadow: 0 -5px 16px 
@@ -123,16 +96,6 @@
       transition-delay: .1s;
     }
   }
-}
-/* Active link */
-.nav__item .active
-{
-  background: linear-gradient(180deg,
-    hsla(var(--first-hue), var(--sat), var(--lig), 1),
-    hsla(var(--first-hue), var(--sat), var(--lig), .2));
-  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
-  color: var(--title-color);
-  border-radius: 2rem 2rem 0 0;
 }
  
 /* Change background header */
