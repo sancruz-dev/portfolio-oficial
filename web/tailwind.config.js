@@ -4,8 +4,8 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          300: '#996dff',
-          500: '#8257e6',
+          300: '#144bb8',
+          500: '#477eeb',
         }
       },
       borderRadius: {
