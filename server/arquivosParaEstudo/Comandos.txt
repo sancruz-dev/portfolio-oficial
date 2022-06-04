@@ -1,0 +1,87 @@
+=== == = NPM = == ===
+
+npm i typescript @types/node ts-node-dev -D
+
+npm i @types/express -D
+
+npm i prisma -D
+
+npm i @prisma/client
+
+npm i nodemailer
+
+npm i @types/nodemailer -D
+
+npm i jest -D
+
+npm i ts-node -D
+
+npm i @swc/jest -D
+
+npm i @types/jest -D
+(tipagens do jest)
+
+npm i cors
+
+npm i @types/cors -D
+
+npm run start
+
+npm run build
+
+
+
+= == === NPX === == =
+
+npx tsc --init | npx typescript --init
+
+npx tsc 
+
+npx prisma init 
+
+npx prisma migrate dev
+
+npx prisma studio 
+
+npx jest --init
+
+
+
+=== ANOTAÇÕES === 
+   
+• ts-node-dev
+   Integração ao typescript. Toda vez que houver uma alteração em qualquer arquivo typescript, ele reinicia o servidor Node;
+
+• express
+   Ajuda à trabalhármos com a parte http do nosso servidor. Oferece a parte de rotas;
+
+• npx tsc --init
+   Cria a pastas dist com arquivos compilados e, gera o arquivo tsconfig.ts;
+
+• npx prisma init
+   Gera: a pasta prisma, o arquivo '.env' (variáveis de ambiente), e o .gitignore;
+
+• npx prisma migrate dev
+   Inicia a última ação feita no 'schema.prisma', ou seja, se foi criado uma tabela, será inserido o comando: create 'nomeDaTabela';
+   Dev significa que a execução será feita em ambiente de desenvolvimento, no entanto, se for executado para produção, será: npx prisma migrate deploy
+
+• npx prisma studio
+   Interface de navegação para banco de dados;
+
+• npx jest --init (inicialização da configuração Jest)
+   Pergunta 1. Quer add um script de teste (y/n)? yes
+   Pergunta 2. Tá usando typescript pro arquivo de configuração (y/n)? yes
+   Pergunta 3. Vai executar no Node ou browser? Node
+   Pergunta 4. Quer que seja adicionado relatórios de coverage (y/n)? yes
+   Pergunta 5. Quer usar V8 ou Babel utilizar no coverage? V8
+   Pergunta 6. Quer que faça uma limpa na memória antes de cada teste, para que que os testes não se "atropelem" (y/n)? yes
+
+   [relatórios de coverage] - O jest vai falar pra gente o quanto a gente já testou e não testou.
+
+• npm i ts-node -D (extensão para dependência de desenvolvimento)
+   Para termos arquivos de configuração do jest em typescript.
+
+
+• npm i @swc/jest -D
+   JEST por padrão, entende APENAS arquivos javascript, portanto, swc converte os arquivos JS para TS.
+

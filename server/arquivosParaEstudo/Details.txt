@@ -1,0 +1,59 @@
+• Dentro do arquivo tsconfig.json na raíz do projeto, alterar "target": "es2016" para "target": "es2020". Útil para não ser preciso converter códigos ts para js que o Node já reconhece, pois os browsers sempre vão ler códigos em js;
+
+• CONCEITO DE MIGRATIONS - Um forma de manter um controle de versão do nosso BD. Migrations automatiza a atualização de banco de dados, por exemplo: se for criado alguma tabela em ambiente de desenvolvimento, apenas será preciso executá-las em produção para que sejam criadas automaticamente;
+
+• Para enviar email na nossa aplicação, é preciso um serviço específico para isso. Alguns exemplos são: Mailgun, Spakpost, MailChimp e Mailtrap (usado no ambiente de dev neste evento);
+
+• SOLID: Torna o código mais testável/escalável/manutenível: {
+   Principle[1] Single responsibility 
+   Principle[2] Open/Closed principle (POO)P
+   Principle[3] Liskov substitution principle
+   Principle[4] Interface segregation principle (Tipagem)
+   Principle[5] Dependency inversion principle
+
+   Principle[1] - Cada classe/função tem uma responsabilidade única;
+
+   Principle[2] - As classe da aplicação devem ser abertas para extensão mas fechadas para modificação;
+
+   Principle[3] - Nós devemos substituir uma classe pai por uma herança dela e tudo continuar funcionando;
+
+   Principle[4] - Este princípio não causa tanto efeito no código desta aplicação...
+
+   Principle[5]...
+
+
+   PRINCÍPIOS ADOTADOS NO projeto
+
+   Passo 1 - P[5]: criação de interfaces/contratos para definir quais funções existirão dentro da camada de BD e da camada de envio de Emails;  
+
+}
+
+• repositories / res - é a nomenclatura de arquivos que vão ser responsáveis por fazer comunicação da aplicação com o BD.
+
+• FeedbacksRepository (contrato) x PrismaFeedbacksRepository: O objetivo aqui é separar as operações das implementações, uma vez que FeedbacksRepository apresenta à aplicação quais são as possíveis operações que podem ser realizadas no BD, PrismaFeedbacksRepository às implementa.
+Isso nos dá o poder de conseguirmos, no futuro, trocar o prisma pra qualquer outra (que não seja a do prisma) implementação como sequelize, mongo, driver nativo... Por termos o contrato separado da implementação, basta criar outra classe que implementa todos os métodos desse contrato, que a aplicação funcionará normalmente;
+
+• No javascript, toda função ASSÍNCRONA vira uma PROMISE;
+
+• Se for esquecido de colocar o await em alguma função dentro de um método, não vai ser avisado se houver qualquer erro dentro dessa função;
+
+• TESTE UNITÁRIOS: são testes que testam pequenas unidades do sistema desacopladas de todo restante, ou seja, testagem de funções específicas separadas do resto das funções. No fim das contas, testa o CONTEÚDO DE UMA FUNÇÃO ESPECÍFICA, logo, se houver qualquer regra de negócio, tenha certeza que o será testado;
+
+• Suíte de testes: vários testes num único arquivo; a função describe(), por exemplo, cria uma suíte de testes;
+
+• Teste básico: test('sum 2 + 2', () => { expect(2 + 2).toBe(4) });
+
+• CORS - controle de segurança do backend, bloqueando o acesso de frontends inadequados. o cors define quais endereços específicos de aplicações frontend podem consumir nosso backend;
+
+• 
+
+• 
+
+• 
+
+
+
+
+
+
+
