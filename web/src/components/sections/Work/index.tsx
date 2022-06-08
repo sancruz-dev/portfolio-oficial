@@ -55,6 +55,7 @@ export function Work() {
       }
       setFiltered(projetos.results)
       setRecent(projetos.results)
+
    }
 
    return <section className="work section" id="work">

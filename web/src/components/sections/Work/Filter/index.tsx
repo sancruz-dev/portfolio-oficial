@@ -4,7 +4,7 @@ type Props = {
    setActiveGenre: Dispatch<SetStateAction<number>>,
    setFiltered: Dispatch<SetStateAction<never[]>>,
    activeGenre: number,
-   recent: never[]
+   recent: any
 }
 
 export function Filter({
@@ -17,7 +17,7 @@ export function Filter({
          return
       }
 
-      const filtered = recent.filter((projeto) =>
+      const filtered = recent.filter((projeto: { genre_ids: any; }) =>
          projeto.genre_ids.includes(activeGenre)
       )
 
