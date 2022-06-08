@@ -5,6 +5,7 @@ import { Services } from '../../components/sections/Services';
 import { Work } from '../../components/sections/Work';
 import { Testimonials } from '../../components/sections/Testimonials';
 import { Contact } from '../../components/sections/Contact';
+import { WidgetFeedback } from '../../components/WidgetFeedback';
 
 function Main() {
    return <main className='main'>
@@ -15,6 +16,7 @@ function Main() {
       <Work />
       <Testimonials />
       <Contact />
+      <WidgetFeedback />
    </main>
 }
 

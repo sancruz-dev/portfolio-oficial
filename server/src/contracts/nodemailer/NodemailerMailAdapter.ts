@@ -18,8 +18,8 @@ const transport = nodemailer.createTransport({
 export class NodemailerMailAdapter implements MailAdapter {
    async sendMail({subject, body}: SendMailData) {
       await transport.sendMail({
-         from: 'Sancruz <sancruz.dev@gmail.com>',
-         to: 'Pereira Sanmir <pereirasanmir@gmail.com>',
+         from: 'Alguém <alguem@gmail.com>',
+         to: 'SanCruz Dev <sancruz.dev@gmail.com>',
          subject,
          html: body,
       });

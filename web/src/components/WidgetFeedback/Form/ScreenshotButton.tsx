@@ -2,20 +2,20 @@ import { Camera, Trash } from "phosphor-react";
 import html2canvas from 'html2canvas'
 import { useState } from "react";
 import { Loading } from "./Loading";
-import { backgroundPosition } from "html2canvas/dist/types/css/property-descriptors/background-position";
+import backgroundPosition  from "html2canvas";
 
 interface ScreenshotButtonProps {
    screenshot: string | null,
    onScreenshotTook: (screenshot: string | null) => void
-}
+} 
 
 export function ScreenshotButton(props: ScreenshotButtonProps) {
    const [isTakingScreenshot, setIsTakingScreenshot] = useState(false)
 
    async function handleTakeScreenshot() {
       setIsTakingScreenshot(true)
-      
-      const canvas = await html2canvas(document.querySelector('html')!)
+       
+      const canvas = await html2canvas(document.querySelector('body')!)
       const base64image = canvas.toDataURL('image/png')
 
       props.onScreenshotTook(base64image)
@@ -32,8 +32,8 @@ export function ScreenshotButton(props: ScreenshotButtonProps) {
             onClick={() => props.onScreenshotTook(null)}
             style={{
                backgroundImage: `url(${props.screenshot})`,
-               backgroundPosition: 'right bottom',
-               backgroundSize: 180,
+               backgroundPosition: 'center',
+               backgroundSize: 150,
             }}
          >
          <Trash weight="fill"/>

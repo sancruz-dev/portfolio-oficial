@@ -1,8 +1,8 @@
 export const SMTP_MAILTRAP = {
    host: "smtp.mailtrap.io",
    port: 2525,
-   user: "bd9e93345c76a5",
-   pass: "decc6494ea1303"
+   user: "ef5c62c2efd60a",
+   pass: "f3769acc3997a6"
 }
 
 export const SMTP_GOOGLE = {

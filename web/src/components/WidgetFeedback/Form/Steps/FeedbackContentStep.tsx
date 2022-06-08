@@ -70,10 +70,10 @@ export function FeedbackContentStep(props: FeedbackContentStepProps) {
             onChange={event => setComment(event.target.value)}
          />
          <footer className="flex gap-2 mt-2">
-            <ScreenshotButton
+            {/* <ScreenshotButton
                screenshot={screenshot}
                onScreenshotTook={setScreenshot}
-            />
+            /> */}
 
             <button
                type="submit"
