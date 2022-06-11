@@ -32,21 +32,21 @@ export function Filter({
             className={activeGenre === 0 
                ? 'work__item active-work' 
                : 'work__item'}>
-            All
+            Todos
          </button>
          <button 
             onClick={() => setActiveGenre(1)} 
             className={activeGenre === 1 
                ? 'work__item active-work' 
                : 'work__item'}>
-            Web
+            Full-Stack
          </button>
          <button 
             onClick={() => setActiveGenre(2)} 
             className={activeGenre === 2 
                ? 'work__item active-work' 
                : 'work__item'}>
-            Design
+            Front-End / Design
          </button>
       </div>
    </>

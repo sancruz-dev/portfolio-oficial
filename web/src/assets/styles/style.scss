@@ -4,7 +4,7 @@
 @import './base/theme';
 @import './base/reusable';
 @import './base/buttons';
- 
+
 @import '../../components/Header/header';
 @import '../../components/Footer/footer';
 
@@ -15,5 +15,6 @@
 @import '../../components/sections/Work/work';
 @import '../../components/sections/Testimonials/testimonials';
 @import '../../components/sections/Contact/contact';
+@import '../../components/WidgetFeedback/widget-feedback';
 
-@import './helpers/breakpoints';
+@import './helpers/breakpoints'; 

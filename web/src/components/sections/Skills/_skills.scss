@@ -17,6 +17,26 @@
    cursor: pointer;
 }
 
+.skills__close .skills__list{
+   padding: 0;
+   height: 0;
+   overflow: hidden;
+}
+
+.skills__open .skills__header{
+   margin-bottom: 1.5rem;
+}
+
+.skills__open .skills__list{
+   padding: 2rem 0;
+   margin-bottom: 1rem;
+
+}
+
+.skills__open .skills__arrow{
+   transform: rotate(-180deg);
+}
+
 .skills__icon,
 .skills__arrow{
    font-size: 2rem;
@@ -47,7 +67,6 @@
 
 .skills__list{
    row-gap: 1.5rem;
-   padding-left: 2.7rem;
    transition: .5s;
 }
 
@@ -75,19 +94,31 @@
 .skills__percentage{
    display: block;
    background-color: var(--first-color-alt);
+   animation: changecolorBar 1.4s linear infinite;
+   filter: brightness(1);
+}
+
+@keyframes changecolorBar {
+   50% {
+      filter: brightness(.5);
+   }
 }
 
 .skills__html{ width: 90%; }
 
 .skills__sasscompass{ width: 80%; }
 
-.skills__js{ width: 60%; }
+.skills__js{ width: 70%; }
 
-.skills__react{ width: 50%; }
+.skills__react{ width: 70%; }
+
+.skills__rn{ width: 50%; }
 
 .skills__postgrebd { width: 60%;}
 
-.skills__bdsql{ width: 50%;}
+.skills__postgresql{ width: 60%;}
+
+.skills__bdsql{ width: 40%;}
 
 .skills__spring{ width: 70%;}
 
@@ -97,7 +128,7 @@
 
 .skills__java{ width: 50%; }
 
-.skills__php{ width: 40%; }
+.skills__php{ width: 30%; }
 
 .skills__figma{ width: 65%; }
 
@@ -107,7 +138,7 @@
 
 .skills__gitgithub{ width: 80%;}
 
-.skills__cicd{ width: 65%; }
+.skills__cicd{ width: 60%; }
 
 .skills__performance{ width: 60%; }
 
@@ -115,22 +146,4 @@
 
 .skills__gulp{ width: 40%; }
 
-.skills__rn{ width: 70%; }
-
-.skills__close .skills__list{
-   height: 0;
-   overflow: hidden;
-}
-
-.skills__open .skills__header{
-   margin-bottom: 1.5rem;
-}
-
-.skills__open .skills__list{
-   height: max-content;
-   margin-bottom: 1rem;
-}
-
-.skills__open .skills__arrow{
-   transform: rotate(-180deg);
-}
+.skills__bw{ width: 20%; }

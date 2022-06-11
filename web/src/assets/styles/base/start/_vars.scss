@@ -15,9 +15,9 @@
    --sat: 80%;
    --lig: 60%;
    
-   --aux-hue: 174;
-   --aux-sat: 63%;
-   --aux-lig: 62%;
+   --aux-hue: 168;
+   --aux-sat: 83%;
+   --aux-lig: 50%;
    
    --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
    --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
@@ -49,7 +49,7 @@
    /*========== z index ==========*/
    --z-tooltip: 10;
    --z-fixed: 100;
-   --z-modal: 1000;
+   --z-modal: 10000;
 
 
    /*========== INDICATOR ==========*/

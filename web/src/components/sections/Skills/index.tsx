@@ -92,7 +92,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Javascript</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">mediano/avançado</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__js"></span>
@@ -102,10 +102,20 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">React Js</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">mediano/avançado</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__react"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">React Native</h3>
+                        <span className="skills__number">mediano</span>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__rn"></span>
                      </div>
                   </div>
 
@@ -137,11 +147,11 @@ export function Skills() {
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">BD e SQL</h3>
+                        <h3 className="skills__name">PostgreSQL</h3>
                         <span className="skills__number">mediano</span>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__bdsql"></span>
+                        <span className="skills__percentage skills__postgresql"></span>
                      </div>
                   </div>
 
@@ -152,6 +162,16 @@ export function Skills() {
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__java"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">BD e SQL</h3>
+                        <span className="skills__number">básico/mediano</span>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__bdsql"></span>
                      </div>
                   </div>
 
@@ -279,7 +299,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Babel + Webpack</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">básico</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__bw"></span>

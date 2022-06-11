@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import sanAbout from '../../../assets/img/san-about.png'
 
 export function About() {
@@ -19,23 +20,21 @@ export function About() {
                <div className="about__box">
                   <i className='bx bx-briefcase-alt about__icon'></i>
                   <h3 className="about__title">Completado</h3>
-                  <span className="about__subtitle">10 + Projetos</span>
+                  <span className="about__subtitle">+ de 10 Projetos</span>
                </div>
 
                <div className="about__box">
                   <i className='bx bx-support about__icon'></i>
                   <h3 className="about__title">Suporte</h3>
-                  <span className="about__subtitle">Online 24/7</span>
+                  <span className="about__subtitle">Online 12hrs por dia</span>
                </div>
             </div>
 
             <p className="about__description">
-               Desenvolvedor frontend: crio aplicações web com interface de usuário UI/UX,
-               bom conhecimento em e-commerce além de ser apaixonado por tecnologia
-               e estudante eterno em programação.
+               Olá ✌️😉 me chamo San, tenho 18 anos de idade, e faço parte desse imenso mundo dos apaixonados por tecnologia ou, em outros termos, <b><i>pintores de pixel</i></b>  . <br /> <br /> Sou técnico em Desenvolvimento de Sistemas, e hoje crio projetos profissionais no ramo do desenvolvimento <b>Web</b> e <b>Mobile</b>.
             </p>
 
-            <a href="#contact" className="button">Contate me</a>
+            <Link to="contact" className="button">Contate me</Link>
          </div>
       </div>
    </section>

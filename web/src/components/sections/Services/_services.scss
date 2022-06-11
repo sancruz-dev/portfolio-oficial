@@ -1,43 +1,57 @@
-.services__container
-{
-  grid-template-columns: repeat(2, 1fr);
+.services__container {
+  grid-template-columns: repeat(1, 230px);
+  justify-content: center;
   gap: 1.5rem;
   padding-top: 1rem;
+}
 
-}
-.services__card
-{
-  background-color: var(--container-color);
-  padding: 3rem 1.5rem 1.5rem;
+.services__card {
+  background-color: transparent;
+  padding: 3rem 2rem 1.5rem;
   border-radius: 1rem;
+  margin-bottom: 3rem;
+  transition: .5s;
+  box-shadow: 0 1px 5px hsla(
+    var(--aux-hue), var(--aux-sat), var(--aux-lig), 1);
+  
+  &:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0px .5rem 12px hsla(
+      var(--first-hue), var(--sat), var(--lig), 1);
+  }
 }
-.services__title
-{
+
+
+.services__title {
   font-size: var(--h3-font-size);
   margin-bottom: 2.5rem;
 }
-.services__button
-{
+
+.services__button {
   color: var(--first-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
   column-gap: .25rem;
   cursor: pointer;
+  width: max-content;
 }
-.services__button:hover .services__icon
-{
-   transform: translateX(.25rem);
+
+.services__button:hover .services__icon {
+  transform: translateX(.25rem);
 }
-.services__icon
-{
+
+.services__icon {
   font-size: 1rem;
   transition: .4s;
 }
 
 /* Services modal */
-.services__modal
-{
+body.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.services__modal {
   position: fixed;
   inset: 0;
   background-color: hsla(var(--second-hue), 28%, 16%, .7);
@@ -49,62 +63,56 @@
   transition: .4s;
   z-index: var(--z-modal);
 }
-.services__modal-content
-{
+
+.services__modal-content {
   position: relative;
   background-color: var(--body-color);
-  padding: 4.5rem 1.5rem 2.5rem;
+  padding: 5rem 55rem 4rem 4rem;
   border-radius: 1.5rem;
 }
+
 .services__modal-title,
-.services__modal-description
-{
+.services__modal-description {
   text-align: center;
 }
-.services__modal-title
-{
+
+.services__modal-title {
   font-size: var(--h3-font-size);
-  color: var(--first-color);
+  color: var(--aux-color);
   margin-bottom: 1rem;
 }
-.services__modal-description
-{
+
+.services__modal-description {
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
 }
-.services__modal-list
-{
+
+.services__modal-list {
   display: grid;
   row-gap: .75rem;
 }
-.services__modal-item
-{
+
+.services__modal-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   column-gap: .5rem;
 }
-.services__modal-icon
-{
+
+.services__modal-icon {
   font-size: 1.5rem;
   color: var(--first-color);
+  filter: contrast(200%);
 }
-.services__modal-info
-{
+
+.services__modal-info {
   font-size: var(--small-font-size);
 }
-.services__modal-close
-{
+
+.services__modal-close {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
   color: var(--first-color);
   cursor: pointer;
-}
-
-/*Active modal*/
-.active-modal
-{
-  opacity: 1;
-  visibility: visible;
 }

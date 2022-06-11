@@ -30,7 +30,7 @@ export function Home() {
          </div>
 
          <div className="home__social">
-            <a href="https://www.linkedin.com/" 
+            <a href="https://www.linkedin.com/in/sanmir-cruz/" 
                target="_blank" 
                className="home__social-link" 
                title='ícone do LinkedIn'>

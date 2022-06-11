@@ -1,3 +1,5 @@
+import { ContactForm } from "./FormContact";
+
 export function Contact() {
    return <section className="contact section" id="contact">
       <span className="section__subtitle">Get in touch</span>
@@ -41,30 +43,7 @@ export function Contact() {
             </div>
          </div>
 
-         <div className="contact__content">
-            <h3 className="contact__title">Write me your project</h3>
-
-            <form action="" className="contact__form">
-               <div className="contact__form-div">
-                  <label htmlFor="" className="contact__form-tag">Names</label>
-                  <input type="text" placeholder="Insira seu nome" className="contact__form-input" />
-               </div>
-
-               <div className="contact__form-div">
-                  <label htmlFor="" className="contact__form-tag">Mail</label>
-                  <input type="email" placeholder="Insira seu email" className="contact__form-input" />
-               </div>
-
-               <div className="contact__form-div contact__form-area">
-                  <label htmlFor="" className="contact__form-tag">Project</label>
-                  <textarea name="" id="" cols={30} rows={1} placeholder="Escreva seu projeto"
-                     className="contact__form-input"></textarea>
-
-               </div>
-
-               <button className="button">Send Message</button>
-            </form>
-         </div>
+         <ContactForm />
       </div>
    </section>
 }

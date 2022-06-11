@@ -1,0 +1,58 @@
+.popover {
+   position: fixed;
+   bottom: 6rem;
+   right: 1rem;
+   display: flex;
+   align-items: flex-end;
+   flex-direction: column;
+   color: #fff;
+   z-index: var(--z-modal);
+}
+
+.popover__btn {
+   background-color: var(--first-color);
+   border-radius: 50rem;
+   padding: .5rem;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   opacity: .6;
+   box-shadow: .1rem .1rem .2rem rgba(0,0,0, .3);
+   transition: .4s;
+
+   &:hover {   
+      opacity: 1;
+   }
+}
+
+.popover__widgetForm {
+   position: relative;
+   padding: 1rem;
+   width: 100vw;
+   bottom: -8.5rem;
+   right: -1rem;
+   border-radius: 1.5rem 1.5rem 0 0 ;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: hsl(var(--second-hue), 32%, 16%);
+   box-shadow: .1rem .1rem .8rem rgba(0,0,0, .3);
+   z-index: var(--z-modal);
+}
+
+.widgetForm__feedbackTypeBtn {
+   background-color: hsl(var(--second-hue), 32%, 8%);
+   border-radius: .5rem;
+   padding: 1.25rem 0;
+   display: flex;
+   flex: 1 1 0%;
+   align-items: center;
+   flex-direction: column;
+   gap: .5rem;
+   border: 2px solid transparent;
+
+   &:hover, &:focus{
+      border-color: var(--first-color);
+      outline: none;
+   }
+}

@@ -41,6 +41,17 @@
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+   .popover {
+      right: 1.25rem;
+   }
+   .popover__widgetForm {
+      width: 25rem;
+      bottom: 0;
+      right: 0;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+   }
+
    .nav__menu {
       width: 328px;
       left: 0;
@@ -57,9 +68,12 @@
       padding: 0 5rem;
    }
 
+   .skills__list {
+      padding-left: 2.7rem;
+   }
+
    .services__container {
-      grid-template-columns: repeat(2, 160px);
-      justify-content: center;
+      grid-template-columns: repeat(2, 230px);
    }
 
    .services__modal-content {
@@ -90,9 +104,28 @@
    }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
+   .section {
+      padding: 6.5rem 0;
+   }
+
+   .popover {
+      margin-bottom: -3rem;
+      right: 3rem;
+      
+      &__btn {
+         opacity: 1;
+         padding: .875rem;
+      }
+   }
+
+
    .skills__container {
       grid-template-columns: repeat(2, 1fr);
+   }
+
+   .skills__list {
+      padding-left: 0;
    }
 
    .work__container {
@@ -104,6 +137,7 @@
       justify-content: center;
       column-gap: 3rem;
    }
+
 }
 
 /* For large devices */
@@ -115,6 +149,7 @@
 
    .section {
       padding: 6.5rem 0 1rem;
+      padding-bottom: 10rem;
    }
 
    .section__title {
@@ -134,15 +169,18 @@
       width: 220px;
    }
 
-   .home__social-link {
-      padding: .4rem;
-      font-size: 1.25rem;
-   }
+   .home__social { 
+      row-gap: .5rem; 
 
-   .home__social::after {
-      transform: rotate(90deg) translate(16px, 0);
+      &::after {
+         transform: rotate(90deg) translate(16px, 4.3px);
+      }
+      &-link {
+         padding: .25rem;
+         font-size: 1rem;
+      }
    }
-
+   
    .home__scroll-icon {
       font-size: 2rem;
    }
@@ -169,14 +207,18 @@
       text-align: center;
       padding: 1rem 1.25rem;
    }
-
+   
    .about__description {
-      padding: 0 4rem 0 0;
+      padding: 0 1.5rem 0 0;
       margin-bottom: 2.5rem;
    }
 
+   .skills__list {
+      padding-left: 2.7rem;
+   }
+   
    .services__container {
-      grid-template-columns: repeat(3, 192px);
+      grid-template-columns: repeat(3, 16rem);
       column-gap: 3rem;
    }
 

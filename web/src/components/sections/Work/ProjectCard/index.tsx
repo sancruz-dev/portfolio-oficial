@@ -21,7 +21,7 @@ export function ProjectCard({ projeto }: Props) {
          />
          <h3 className="work__title">{projeto.title}</h3>
 
-         <a href="#" className="work__button">
+         <a href={projeto.link} target="__blank" className="work__button">
             Demo <i className='bx bx-right-arrow-alt work__icon'></i>
          </a>
       </motion.div>

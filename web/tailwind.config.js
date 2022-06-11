@@ -6,7 +6,13 @@ module.exports = {
         brand: {
           300: '#144bb8',
           500: '#477eeb',
-        }
+        },
+        firstColor: {
+          500: 'var(--first-color)',
+        },
+        auxColor: {
+          500: 'var(--aux-color)',
+        },
       },
       borderRadius: {
         md: '4px'

@@ -1,7 +1,33 @@
+body {
+   &::before {
+      content: '';
+      position: absolute;
+      padding: 10rem;
+      bottom: -16rem;
+      left: -16rem;
+      background: var(--aux-color);
+      border-radius: 50%;
+      filter: blur(8rem);
+      z-index: -100000;
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      padding: 10rem;
+      left: -16rem;
+      bottom: -160rem;
+      background: var(--first-color);
+      border-radius: 50%;
+      filter: blur(8rem);
+      z-index: -100000;
+   }
+
+}
+
 .container {
    max-width: 968px;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   padding: 0 1rem;
 }
 
 .grid {
@@ -9,15 +35,15 @@
    gap: 1.25rem;
 }
 
-.main { 
-   overflow: hidden; 
+.main {
+   overflow: hidden;
 }
 
 .section {
    padding: 4rem 0;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
    text-align: center;
 }

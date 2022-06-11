@@ -2,7 +2,7 @@
 {
   position: relative;
   row-gap: 4.5rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .home__data
 { text-align: center; }
@@ -65,17 +65,17 @@
   bottom: 5rem;
   left: 1rem;
   display: grid;
-  row-gap: .5rem;
+  row-gap: .8rem;
 }
 .home__social-link
 {
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .25rem;
+  padding: .4rem;
   border-radius: .25rem;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: .4s;
 }
 .home__social-link:hover
@@ -89,13 +89,13 @@
   width: 32px;
   height: 2px;
   background-color: var(--first-color);
-  transform: rotate(90deg) translate(16px, 3px);
+  transform: rotate(90deg) translate(16px, 0px);
 }
 .home__scroll
 {
   color: var(--first-color);
   right: 0;
-  bottom: 6.5rem;
+  bottom: 8.8rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
@@ -109,3 +109,4 @@
   font-size: var(--small-font-size);
   transform: rotate(-90deg);
 }
+

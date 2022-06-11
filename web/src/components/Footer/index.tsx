@@ -17,13 +17,25 @@ export function Footer() {
             </ul>
 
             <ul className="footer__social">
-               <a href="https://www.facebook.com/" className="footer__social-link">
+               <a 
+                  href="https://www.facebook.com/sanmir.pereira" 
+                  target="__blank"
+                  className="footer__social-link"
+               >
                   <i className="bx bxl-facebook"></i>
                </a>
-               <a href="https://www.instagram.com/" className="footer__social-link">
+               <a 
+                  href="https://www.instagram.com/sancruz_dev" 
+                  target="__blank"
+                  className="footer__social-link"
+               >
                   <i className="bx bxl-instagram"></i>
                </a>
-               <a href="https://www.twitter.com/" className="footer__social-link">
+               <a 
+                  href="https://twitter.com/SanCruz_Dev" 
+                  target="__blank"
+                  className="footer__social-link"
+               >
                   <i className="bx bxl-twitter"></i>
                </a>
             </ul>
