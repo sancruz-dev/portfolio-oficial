@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 export function Footer() {
    return <>
       <footer className="footer">
@@ -6,13 +8,13 @@ export function Footer() {
 
             <ul className="footer__list">
                <li>
-                  <a href="#about" className="footer__link">About</a>
+                  <Link to="about" className="footer__link">Sobre</Link>
                </li>
                <li>
-                  <a href="#work" className="footer__link">Projects</a>
+                  <Link to="work" className="footer__link">Projetos</Link>
                </li>
                <li>
-                  <a href="#testimonial" className="footer__link">Testimonial</a>
+                  <Link to="skills" className="footer__link">Habilidades</Link>
                </li>
             </ul>
 
