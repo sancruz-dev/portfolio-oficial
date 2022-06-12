@@ -42,7 +42,7 @@ export function ContactForm() {
                ></textarea>
             </div>
 
-            <button className="button" disabled>Send Message</button>
+            <button className="button" disabled>Enviar formulário</button>
          </form>
       </div>
    </>
