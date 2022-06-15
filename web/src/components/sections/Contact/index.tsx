@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ContactForm } from "./FormContact";
+import { ContactForm } from "./ContactForm";
 
 export function Contact() {
    const { t } = useTranslation();

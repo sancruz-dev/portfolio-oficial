@@ -1,21 +1,21 @@
 import nodemailer from 'nodemailer'
 import { MailAdapter, SendMailData } from "../MailAdapter";
-import { SMTP_MAILTRAP, SMTP_GOOGLE } from '../config/smtp'
+import { SMTP_SENDINBLUE } from '../config/smtp'
 
 const transport = nodemailer.createTransport({
-   host: SMTP_MAILTRAP.host,
-   port: SMTP_MAILTRAP.port,
+   host: SMTP_SENDINBLUE.host,
+   port: SMTP_SENDINBLUE.port,
    secure: false,
    auth: {
-      user: SMTP_MAILTRAP.user,
-      pass: SMTP_MAILTRAP.pass,
+      user: SMTP_SENDINBLUE.user,
+      pass: SMTP_SENDINBLUE.pass,
    },
    tls: {
       rejectUnauthorized: false,
    },
 });
 
-export class NodemailerMailAdapter implements MailAdapter {
+export class NodemailerMailAdapterGoogle implements MailAdapter {
    async sendMail({sendlerName, sendlerEmail, subject, body}: SendMailData) {
       await transport.sendMail({
          from: `${sendlerName} <${sendlerEmail}>`,

@@ -91,15 +91,20 @@
       "title_content1_contact": "Talk to me",
       "btn_content1_contact": "Send Message",
       
-      "title_content2_p1_contact": "This form is under maintenance! ",
-      "title_content2_p2_contact": "If you want to get in touch, access other means such as",
-      "title_content2_p3_contact": "WhatsApp, e-mail or Mensseger...",
+      "title_form_p1_contact": "Any project in mind?",
+      "title_form_p2_contact": "Describe it to me!",
       "name_input_contact": "Name",
       "name_placeholder_contact": "Enter your name",
       "mail_placeholder_contact": "Enter your e-mail",
       "project_placeholder_contact": "Write your project or leave a comment",
       "project_input_contact": "Project | Comment",
       "btn_sendForm_contact": "Send form",
+      "btnSuccess_form": "Submit another form",
+      "title_success_form": "Form sent successfully!",
+      "tx1_p1_success_form": "The message has already arrived in my mailbox.! wait a moment that",
+      "tx2_p1_success_form": "I'll take a look, and I'll answer you :)",
+      "tx1_p2_success_form": "If you want to fix a bug, add something, or submit another form, ",
+      "tx2_p2_success_form": "click 'Submit another form'",
 
       
       "linkSobre_footer": "About",

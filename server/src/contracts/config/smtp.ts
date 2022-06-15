@@ -8,7 +8,7 @@ export const SMTP_MAILTRAP = {
 export const SMTP_GOOGLE = {
    host: "smtp.google.com",
    port: 587,
-   user: "pereirasanmir@gmail.com",
+   user: "sancruz.dev@gmail.com",
    pass: "sancruz18",
 
    // Google não aceita imagem em base64

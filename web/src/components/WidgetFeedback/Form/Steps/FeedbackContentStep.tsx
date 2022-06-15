@@ -84,6 +84,5 @@ export function FeedbackContentStep(props: FeedbackContentStepProps) {
             </button>
          </footer>
       </form>
-
    </>
 }

@@ -1262,6 +1262,7 @@ body.ReactModal__Body--open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
   -webkit-column-gap: .25rem;
           column-gap: .25rem;
 }

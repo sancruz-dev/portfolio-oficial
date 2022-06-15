@@ -1,4 +1,6 @@
 export interface SendMailData { 
+   sendlerName: string;
+   sendlerEmail: string;
    subject: string;
    body: string;
 }
