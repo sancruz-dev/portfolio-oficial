@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -25,8 +25,8 @@ model Feedback {
 model Form {
   id String @id @default(uuid())
 
-  name String
-  email String
+  name    String
+  email   String
   comment String
 
   @@map("formulario")
