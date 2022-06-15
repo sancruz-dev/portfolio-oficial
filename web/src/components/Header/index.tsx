@@ -4,11 +4,9 @@ import { NavbarMenu } from './NavbarMenu'
 
 
 export function Header() {
-   const [handleHeader, setHandleHeader] = useState('')
-   const [handleSunIcon, setHandleSunIcon] = useState('')
-   const [handleMoonIcon, setHandleMoonIcon] = useState('')
-
+   
    // ========= CHANGE BACKGROUND HEADER =========
+   const [handleHeader, setHandleHeader] = useState('')
    window.addEventListener('scroll', () => {
       scrollY >= 50
          ? setHandleHeader('scroll-header')
@@ -17,11 +15,11 @@ export function Header() {
 
 
    // ========= CHANGE THEME LIGHT/DARK =========
-
+   const [handleSunIcon, setHandleSunIcon] = useState('')
+   const [handleMoonIcon, setHandleMoonIcon] = useState('')
    const lightTheme = 'light-theme'
    const selectedTheme = localStorage.getItem('selected-theme')
-   const getCurrentTheme = () =>
-      document.body.classList.contains(lightTheme) ? 'dark' : 'light'
+   const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
 
    if (selectedTheme) {
       document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)

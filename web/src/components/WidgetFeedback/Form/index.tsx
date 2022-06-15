@@ -6,6 +6,7 @@ import thoughtImageUrl from '../../../assets/img/WidgetFeedback_imgs/thought.svg
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep"
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep"
 import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep"
+import { useTranslation } from "react-i18next"
 
 export const feedbackTypes = {
    BUG: {
@@ -38,40 +39,39 @@ export type FeedbackType = keyof typeof feedbackTypes
 export function WidgetForm() {
    const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null)
    const [feedbackSent, setFeedbackSent] = useState(false)
+   const { t } = useTranslation()
 
    function handleRestartFeedback() {
       setFeedbackSent(false)
       setFeedbackType(null)
    }
 
-   return (
-      <div className="popover__widgetForm">
-         {feedbackSent ? (
-            <FeedbackSuccessStep 
-               onfeedbackRestartedRequested={handleRestartFeedback} />
-         ) : (
-            <>
-               {!feedbackType ? (
-                  <FeedbackTypeStep 
-                     onFeedbackTypeChanged={setFeedbackType} />
-               ) : (
-                  <FeedbackContentStep
-                     feedbackType={feedbackType}
-                     onFeedbackRestartedRequested={handleRestartFeedback}
-                     onFeedbackSent={() => setFeedbackSent(true)}
-                  />
+   return <div className="popover__widgetForm">
+      {feedbackSent ? (
+         <FeedbackSuccessStep
+            onfeedbackRestartedRequested={handleRestartFeedback} />
+      ) : (
+         <>
+            {!feedbackType ? (
+               <FeedbackTypeStep
+                  onFeedbackTypeChanged={setFeedbackType} />
+            ) : (
+               <FeedbackContentStep
+                  feedbackType={feedbackType}
+                  onFeedbackRestartedRequested={handleRestartFeedback}
+                  onFeedbackSent={() => setFeedbackSent(true)}
+               />
 
-               )}
-               {/* [B] Condição feedbackTypes */}
-            </>
-         )}
+            )}
+            {/* [B] Condição feedbackTypes */}
+         </>
+      )}
 
-         <footer className="text-sm text-gray-400 font-semibold">
-            Feito com ♥ por <a className="underline underline-offset-2" href="https://www.sancruz.netlify.app">Sancruz</a>
-         </footer>
-      </div>
+      <footer className="text-sm text-gray-400 font-semibold">
+         {t('footer_feedback')} <a className="underline underline-offset-2" href="https://www.sancruz.netlify.app">Sancruz</a>
+      </footer>
+   </div>
 
-   )
 }
 
 /* ANOTAÇÕES 

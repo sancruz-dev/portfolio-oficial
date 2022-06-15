@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 export function Footer() {
+   const { t } = useTranslation();
+
    return <>
       <footer className="footer">
          <div className="footer__container container">
@@ -8,13 +11,19 @@ export function Footer() {
 
             <ul className="footer__list">
                <li>
-                  <Link to="about" className="footer__link">Sobre</Link>
+                  <Link to="about" className="footer__link">
+                     {t('linkSobre_footer')}
+                  </Link>
                </li>
                <li>
-                  <Link to="work" className="footer__link">Projetos</Link>
+                  <Link to="work" className="footer__link">
+                     {t('linkProjetos_footer')}
+                  </Link>
                </li>
                <li>
-                  <Link to="skills" className="footer__link">Habilidades</Link>
+                  <Link to="skills" className="footer__link">
+                     {t('linkHabilidades_footer')}
+                  </Link>
                </li>
             </ul>
 
@@ -23,6 +32,7 @@ export function Footer() {
                   href="https://www.facebook.com/sanmir.pereira" 
                   target="__blank"
                   className="footer__social-link"
+                  title="Me siga no Facebook"
                >
                   <i className="bx bxl-facebook"></i>
                </a>
@@ -30,6 +40,7 @@ export function Footer() {
                   href="https://www.instagram.com/sancruz_dev" 
                   target="__blank"
                   className="footer__social-link"
+                  title="Me siga no Instagram"
                >
                   <i className="bx bxl-instagram"></i>
                </a>
@@ -37,13 +48,14 @@ export function Footer() {
                   href="https://twitter.com/SanCruz_Dev" 
                   target="__blank"
                   className="footer__social-link"
+                  title="Me siga no Twitter"
                >
                   <i className="bx bxl-twitter"></i>
                </a>
             </ul>
 
             <span className="footer__copy">
-               &#169; Sancruz-dev. Todos os direitos reservados
+               &#169; Sancruz-dev. {t('copyRight_footer')}
             </span>
          </div>
       </footer>

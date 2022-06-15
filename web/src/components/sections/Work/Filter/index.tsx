@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 type Props = {
    setActiveGenre: Dispatch<SetStateAction<number>>,
@@ -25,29 +26,29 @@ export function Filter({
 
    }, [activeGenre])
 
-   return <>
-      <div className="work__filters">
-         <button 
-            onClick={() => setActiveGenre(0)} 
-            className={activeGenre === 0 
-               ? 'work__item active-work' 
-               : 'work__item'}>
-            Todos
-         </button>
-         <button 
-            onClick={() => setActiveGenre(1)} 
-            className={activeGenre === 1 
-               ? 'work__item active-work' 
-               : 'work__item'}>
-            Full-Stack
-         </button>
-         <button 
-            onClick={() => setActiveGenre(2)} 
-            className={activeGenre === 2 
-               ? 'work__item active-work' 
-               : 'work__item'}>
-            Front-End / Design
-         </button>
-      </div>
-   </>
+   const { t } = useTranslation();
+
+   return <div className="work__filters">
+      <button
+         onClick={() => setActiveGenre(0)}
+         className={activeGenre === 0
+            ? 'work__item active-work'
+            : 'work__item'}>
+         {t('btnAll_work')}
+      </button>
+      <button
+         onClick={() => setActiveGenre(1)}
+         className={activeGenre === 1
+            ? 'work__item active-work'
+            : 'work__item'}>
+         Full-Stack
+      </button>
+      <button
+         onClick={() => setActiveGenre(2)}
+         className={activeGenre === 2
+            ? 'work__item active-work'
+            : 'work__item'}>
+         Front-End / Design
+      </button>
+   </div>
 }

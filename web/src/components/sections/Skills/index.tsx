@@ -1,10 +1,12 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 export function Skills() {
    const [frontendClass, setFrontendClass] = useState('skills__open')
    const [backendClass, setBackendClass] = useState('skills__close')
    const [designClass, setDesignClass] = useState('skills__close')
    const [outrasClass, setOutrasClass] = useState('skills__close')
+   const { t } = useTranslation();
 
    function toggleSkillContent1() {
       if (frontendClass === 'skills__close') {
@@ -51,8 +53,8 @@ export function Skills() {
    }
 
    return <section className="skills section" id="skills">
-      <span className="section__subtitle">Minha experiência</span>
-      <h2 className="section__title">Nível Técnico</h2>
+      <span className="section__subtitle">{t('subtt_sec_skills')}</span>
+      <h2 className="section__title">{t('title_sec_skills')}</h2>
 
       <div className="skills__container container grid">
          <div>
@@ -62,7 +64,7 @@ export function Skills() {
                   <i className='bx bx-code-alt skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Frontend</h3>
-                     <span className="skills__subtitle">Mais de 3 anos</span>
+                     <span className="skills__subtitle">{t('subtt_skillsCard1_skills')}</span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -72,7 +74,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">HTML/CSS</h3>
-                        <span className="skills__number">avançado</span>
+                        <span className="skills__number">{t('skillCard1_skillNumber1_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__html"></span>
@@ -82,7 +84,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Sass/Compass</h3>
-                        <span className="skills__number">mediano/avançado</span>
+                        <span className="skills__number">{t('skillCard1_skillNumber2_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__sasscompass"></span>
@@ -92,7 +94,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Javascript</h3>
-                        <span className="skills__number">mediano/avançado</span>
+                        <span className="skills__number">{t('skillCard1_skillNumber3_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__js"></span>
@@ -102,7 +104,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">React Js</h3>
-                        <span className="skills__number">mediano/avançado</span>
+                        <span className="skills__number">{t('skillCard1_skillNumber4_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__react"></span>
@@ -112,7 +114,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">React Native</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">{t('skillCard1_skillNumber5_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__rn"></span>
@@ -127,7 +129,7 @@ export function Skills() {
                   <i className='bx bx-server skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Backend</h3>
-                     <span className="skills__subtitle">Mais de 3 anos</span>
+                     <span className="skills__subtitle">{t('subtt_skillsCard2_skills')}</span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -138,7 +140,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Spring</h3>
-                        <span className="skills__number">mediano/avançado</span>
+                        <span className="skills__number">{t('skillCard2_skillNumber1_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__spring"></span>
@@ -148,7 +150,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">PostgreSQL</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">{t('skillCard2_skillNumber2_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__postgresql"></span>
@@ -158,7 +160,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Java</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">{t('skillCard2_skillNumber3_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__java"></span>
@@ -168,7 +170,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">BD e SQL</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">{t('skillCard2_skillNumber4_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__bdsql"></span>
@@ -178,7 +180,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Node Js</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">{t('skillCard2_skillNumber5_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__node"></span>
@@ -188,7 +190,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">PHP</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">{t('skillCard2_skillNumber6_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__php"></span>
@@ -205,7 +207,7 @@ export function Skills() {
                   <i className='bx bx-palette skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Designer</h3>
-                     <span className="skills__subtitle">mais de 1 ano</span>
+                     <span className="skills__subtitle">{t('subtt_skillsCard3_skills')}</span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -215,7 +217,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Figma</h3>
-                        <span className="skills__number">mediano/avançado</span>
+                        <span className="skills__number">{t('skillCard3_skillNumber1_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__figma"></span>
@@ -225,7 +227,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Canva</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">{t('skillCard3_skillNumber2_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__canva"></span>
@@ -235,7 +237,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Photoshop</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">{t('skillCard3_skillNumber3_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__photoshop"></span>
@@ -249,7 +251,7 @@ export function Skills() {
                   <i className='bx bx-dots-horizontal-rounded skills__icon'></i>
                   <div>
                      <h3 className="skills__titles">Outros</h3>
-                     <span className="skills__subtitle">(Métodos, perfomance e prática)</span>
+                     <span className="skills__subtitle">{t('subtt_skillsCard4_skills')}</span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -259,7 +261,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Git e Github</h3>
-                        <span className="skills__number">mediano/avançado</span>
+                        <span className="skills__number">{t('skillCard4_skillNumber1_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__gitgithub"></span>
@@ -269,7 +271,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">CI/CD</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">{t('skillCard4_skillNumber2_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__cicd"></span>
@@ -279,7 +281,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">POO</h3>
-                        <span className="skills__number">mediano</span>
+                        <span className="skills__number">{t('skillCard4_skillNumber3_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__poo"></span>
@@ -289,7 +291,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Gulp Js</h3>
-                        <span className="skills__number">básico/mediano</span>
+                        <span className="skills__number">{t('skillCard4_skillNumber4_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__gulp"></span>
@@ -299,7 +301,7 @@ export function Skills() {
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Babel + Webpack</h3>
-                        <span className="skills__number">básico</span>
+                        <span className="skills__number">{t('skillCard4_skillNumber5_skills')}</span>
                      </div>
                      <div className="skills__bar">
                         <span className="skills__percentage skills__bw"></span>

@@ -1,16 +1,20 @@
+import { useTranslation } from "react-i18next";
+
 export function ContactForm() {
+   const { t } = useTranslation();
+
    return <>
       <div className="contact__content">
-         <h4 className="contact__title">Este formulário está em <b>manutenção!</b> <br/> Caso queira entrar em contato, acesse outros meios como <br /> WhatsApp, e-mail ou Mensseger...</h4>
+         <h4 className="contact__title">{t('title_content2_p1_contact')} <br/> {t('title_content2_p2_contact')} <br /> {t('title_content2_p3_contact')}</h4>
 
          <form action="" className="contact__form">
             <div className="contact__form-div">
                <label htmlFor="" className="contact__form-tag">
-                  Names
+                  {t('name_input_contact')}
                </label>
                <input 
                   type="text" 
-                  placeholder="Insira seu nome" 
+                  placeholder={t('name_placeholder_contact')} 
                   className="contact__form-input" 
                   disabled
                />
@@ -22,7 +26,7 @@ export function ContactForm() {
                </label>
                <input 
                   type="email" 
-                  placeholder="Insira seu email" 
+                  placeholder={t('mail_placeholder_contact')} 
                   className="contact__form-input" 
                   disabled
                   />
@@ -30,19 +34,19 @@ export function ContactForm() {
 
             <div className="contact__form-div contact__form-area">
                <label htmlFor="" className="contact__form-tag">
-                  Project
+                  {t('project_input_contact')}
                </label>
                <textarea 
                   name="" 
                   id="" 
                   cols={30} rows={1} 
-                  placeholder="Escreva seu projeto"
+                  placeholder={t('project_placeholder_contact')}
                   className="contact__form-input"
                   disabled
                ></textarea>
             </div>
 
-            <button className="button" disabled>Enviar formulário</button>
+            <button className="button" disabled>{t('btn_sendForm_contact')}</button>
          </form>
       </div>
    </>

@@ -32,21 +32,21 @@ export function Home() {
          <div className="home__social">
             <a href="https://www.linkedin.com/in/sanmir-cruz/" 
                target="_blank" 
-               className="home__social-link" 
-               title='ícone do LinkedIn'>
+               className="home__social-link"
+               title='Acesse meu LinkedIn'>
                <i className='bx bxl-linkedin-square'></i>
             </a>
             <a 
                href="https://www.github.com/sancruz-dev" 
                target="_blank" 
                className="home__social-link" 
-               title='ícone do Github'>
+               title='Acesse meu Github'>
                <i className='bx bxl-github'></i>
             </a>
             <a href="https://codepen.io/sancruz-dev" 
                target="_blank" 
                className="home__social-link" 
-               title='ícone do codepen'>
+               title='Acesse meu CodePen'>
                <i className='bx bxl-codepen'></i>
             </a>
          </div>

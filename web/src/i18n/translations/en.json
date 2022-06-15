@@ -1,11 +1,118 @@
 {
    "translation": {
       "hello": "Hello! I'm",
-      "systemsDev": "Systems developer",
+      "systemsDev": "Web Developer",
       "whereYouCan": "where you can find anything you want.",
       "baixarCV_btn": "Download CV",
       "sobreMim_btn": "About Me",
-      "scrollDown": "Scroll Down"
+      "scrollDown": "Scroll Down",
+   
+
+      "subtt_sec_SobreMim": "Introduction",
+      "title_sec_SobreMim": "About Me",
+      "title_box1_SobreMim": "Experience",
+      "subtt_box1_SobreMim": "4 years programing",
+      "title_box2_SobreMim": "Completed",
+      "subtt_box2_SobreMim": "+ 10 projects",
+      "title_box3_SobreMim": "Support",
+      "subtt_box3_SobreMim": "Online 12 hours a day",
+      "desc_p1_SobreMim": "Hey ✌️😉 let me introduce myself: as you already know my name, can call me San. Well, I'm 18 years old, and I am very happy to be part of this immense world of technology lovers or, in others terms,",
+      "desc_p1__bold_SobreMim": "pixel painters",
+      "desc_p2_SobreMim": "I'm a Systems Development Technician, and today I create professional projects in the field of development",
+      "btn_SobreMim": "My contact",
+
+
+      "title_sec_skills": "Technical level",
+      "subtt_sec_skills": "My experience",
+      "subtt_skillsCard1_skills": "More than 3 years",
+      "subtt_skillsCard2_skills": "More than 3 years",
+      "subtt_skillsCard3_skills": "More than 2 year",
+      "subtt_skillsCard4_skills": "(methods, performance and practice)",
+      "skillCard1_skillNumber1_skills": "advanced",
+      "skillCard1_skillNumber2_skills": "median/advanced",
+      "skillCard1_skillNumber3_skills": "median/advanced",
+      "skillCard1_skillNumber4_skills": "median/advanced",
+      "skillCard1_skillNumber5_skills": "median",
+      
+      "skillCard2_skillNumber1_skills": "median/advanced",
+      "skillCard2_skillNumber2_skills": "median",
+      "skillCard2_skillNumber3_skills": "median",
+      "skillCard2_skillNumber4_skills": "basic/median",
+      "skillCard2_skillNumber5_skills": "basic/median",
+      "skillCard2_skillNumber6_skills": "basic/median",
+      
+      "skillCard3_skillNumber1_skills": "median/advanced",
+      "skillCard3_skillNumber2_skills": "median",
+      "skillCard3_skillNumber3_skills": "basic/median",
+      
+      "skillCard4_skillNumber1_skills": "median/advanced",
+      "skillCard4_skillNumber2_skills": "median",
+      "skillCard4_skillNumber3_skills": "median",
+      "skillCard4_skillNumber4_skills": "basic/median",
+      "skillCard4_skillNumber5_skills": "basic",
+
+      
+      "subtt_sec_services": "My services",
+      "title_sec_services": "What I Offer",
+      "serviceCardTitle_line1_services": "Web",
+      "serviceCardTitle_line2_services": "Development",
+      "serviceCardBtn_services": "See more",
+      "title_card1_services": "Web Development",
+      "desc_modal1_services": "Service with more than 3 years of experience. I offer quality work to clients and companies.",      
+      "item1_modal1_services": "React Js como ferramenta principal, used by the world's largest companies, like Facebook and Tesla;",
+      "item2_modal1_services": "Integration and continuous delivery in a variety of ways;",
+      "item3_modal1_services": "Web performance: get the best quality and speed with great content;",
+      "item4_modal1_services": "I have experience in large hosting and domain platforms such as Hostinger and HostiGator (Brazil);",
+      "item5_modal1_services": "Adaptation and Responsiveness: application compatible with any type of screen and device, whether mobile, desktop or tablet.",
+      
+      "desc_modal2_services": "Service with a beautiful interface, modern and functional is the key to keep the user inside the application, and even come back more often.",
+      "item1_modal2_services": "The best possible user interface and experience, following all requested standards;",
+      "item2_modal2_services": "Creation of icons, logos, among other design elements;",
+      "item3_modal2_services": "Accessibility to the project, both visually and functionally;",
+      "item4_modal2_services": "Prototype creation;",
+      "item5_modal2_services": "Brand position;",
+
+      "desc_modal3_services": "In order to leverage the project, making it scalable, I offer a final product that involves digital marketing strategies.",
+      "item1_modal3_services": "Addressability: accurate targeting of specific audiences;",
+      "item2_modal3_services": "Tracking: measured audience, engagement and return of user actions, in a simple and automated way;",
+      "item3_modal3_services": "Accessibility: availability of content for users to consume for as long as they want;",
+      "item4_modal3_services": "Malleability: any Landing Page can be changed, reevaluated, restarted and even paid for whenever you want.",
+      "item5_modal3_services": "Interactivity: creation of communication between company and user, through comments, chats, feedbacks, among others.",
+
+      
+      "title_sec_work": "Recent Projects",
+      "subtt_sec_work": "My portfolio",
+      "btnAll_work": "All",
+      "btnToView_work": "To View",
+
+      
+      "subtt_sec_contact": "Get in touch",
+      "title_sec_contact": "Call Me",
+      "title_content1_contact": "Talk to me",
+      "btn_content1_contact": "Send Message",
+      
+      "title_content2_p1_contact": "This form is under maintenance! ",
+      "title_content2_p2_contact": "If you want to get in touch, access other means such as",
+      "title_content2_p3_contact": "WhatsApp, e-mail or Mensseger...",
+      "name_input_contact": "Name",
+      "name_placeholder_contact": "Enter your name",
+      "mail_placeholder_contact": "Enter your e-mail",
+      "project_placeholder_contact": "Write your project or leave a comment",
+      "project_input_contact": "Project | Comment",
+      "btn_sendForm_contact": "Send form",
+
+      
+      "linkSobre_footer": "About",
+      "linkProjetos_footer": "Projects",
+      "linkHabilidades_footer": "skills",
+      "copyRight_footer": "All rights reserved",
+
+
+      "title_typeStep_feedback": "Leave your feedback :)",
+      "footer_feedback": "Made with ♥ by",
+      "msgSuccess_feedback": "I really appreciate your feedback ♥!",
+      "btnSuccess_feedback": "send another feedback",
+      "": ""
 
    }
 }

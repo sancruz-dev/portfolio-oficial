@@ -1,10 +1,117 @@
 {
    "translation": {
       "hello": "Olá, eu sou",
-      "systemsDev": "Desenvolvedor de sistemas",
+      "systemsDev": "Desenvolvedor Web",
       "whereYouCan": "Onde você encontra qualquer coisa que quiser.",
       "baixarCV_btn": "Baixar CV",
       "sobreMim_btn": "Sobre Mim",
-      "scrollDown": "Rolar Página"
+      "scrollDown": "Rolar Página",
+      
+
+      "subtt_sec_SobreMim": "Introdução",
+      "title_sec_SobreMim": "Sobre Mim",
+      "title_box1_SobreMim": "Experiância",
+      "subtt_box1_SobreMim": "4 anos programando",
+      "title_box2_SobreMim": "Completado",
+      "subtt_box2_SobreMim": "+ de 10 projetos",
+      "title_box3_SobreMim": "Suporte",
+      "subtt_box3_SobreMim": "Online 12 horas por dia",
+      "desc_p1_SobreMim": "Olá ✌️😉 deixe-me me apresentar: como já sabe meu nome, pode me chamar de San. Bom, tenho 18 anos de idade, e sou muito feliz por fazer parte desse imenso mundo dos apaixonados por tecnologia ou, em outros termos,",
+      "desc_p1__bold_SobreMim": "pintores de pixel",
+      "desc_p2_SobreMim": "Sou técnico em Desenvolvimento de Sistemas, e hoje crio projetos profissionais no ramo do desenvolvimento",
+      "btn_SobreMim": "Meu contato",
+
+      
+      "title_sec_skills": "Nível Técnico",
+      "subtt_sec_skills": "Minha experiência",
+      "subtt_skillsCard1_skills": "Mais de 3 anos",
+      "subtt_skillsCard2_skills": "Mais de 3 anos",
+      "subtt_skillsCard3_skills": "Mais de 2 anos",
+      "subtt_skillsCard4_skills": "(Métodos, performance e prática)",
+      
+      "skillCard1_skillNumber1_skills": "avançado",
+      "skillCard1_skillNumber2_skills": "mediano/avançado",
+      "skillCard1_skillNumber3_skills": "mediano/avançado",
+      "skillCard1_skillNumber4_skills": "mediano/avançado",
+      "skillCard1_skillNumber5_skills": "mediano",
+
+      "skillCard2_skillNumber1_skills": "mediano/avançado",
+      "skillCard2_skillNumber2_skills": "mediano",
+      "skillCard2_skillNumber3_skills": "mediano",
+      "skillCard2_skillNumber4_skills": "básico/mediano",
+      "skillCard2_skillNumber5_skills": "básico/mediano",
+      "skillCard2_skillNumber6_skills": "básico/mediano",
+      
+      "skillCard3_skillNumber1_skills": "mediano/avançado",
+      "skillCard3_skillNumber2_skills": "mediano",
+      "skillCard3_skillNumber3_skills": "básico/mediano",
+      
+      "skillCard4_skillNumber1_skills": "mediano/avançado",
+      "skillCard4_skillNumber2_skills": "mediano",
+      "skillCard4_skillNumber3_skills": "mediano",
+      "skillCard4_skillNumber4_skills": "básico/mediano",
+      "skillCard4_skillNumber5_skills": "básico",
+
+      "subtt_sec_services": "Meus serviços",
+      "title_sec_services": "O que Ofereço",
+      "serviceCardTitle_line1_services": "Desenvolvimento",
+      "serviceCardTitle_line2_services": "Web",
+      "serviceCardBtn_services": "Ver mais",
+      "title_card1_services": "Desenvolvimento Web",
+      "desc_modal1_services": "Serviço com mais de 3 anos de experiência. Ofereço um trabalho de qualidade para clientes e empresas.",
+      "item1_modal1_services": "React Js as main tool, utilizada pelas maiores empresas do mundo, como Facebook e Tesla;",
+      "item2_modal1_services": "Integração e entrega contínua das mais variadas formas;",
+      "item3_modal1_services": "Performance web: obtenha a melhor qualidade e rapidez com grades conteúdos;",
+      "item4_modal1_services": "Tenho experiência em grandes plataformas de hospedagem e domínio como a Hostinger e HostiGator (Brasil);",
+      "item5_modal1_services": "Adaptação e Responsividade: aplicação compatível com qualquer tipo de tela e dispositivo, seja mobile, desktop ou tablet.",
+
+      "desc_modal2_services": "Serviço com uma bela interface, moderna e funcional é a chave para manter o usuário dentro da aplicação, e até mesmo voltar mais vezes.",
+      "item1_modal2_services": "A melhor experiência e interface do usuário possível, seguindo todos os padrões solicitados;",
+      "item2_modal2_services": "Criação de ícones, logotipos, entre outros elementos de design.",
+      "item3_modal2_services": "Acessibilidade ao projeto, tanto na parte visual ou funcional.",
+      "item4_modal2_services": "Criação de protótipo.",
+      "item5_modal2_services": "Posição de marca;",
+
+      "desc_modal3_services": "Com o objetivo de alavancar o projeto, deixando-o escalável, ofereço um produto final que envolve estratégias de marketing digital.",
+      "item1_modal3_services": "Dirigibilidade: segmentações certeiras de público-alvo específico;",
+      "item2_modal3_services": "Rastreamento: audiência medida, engajamento e retorno de ações de usuários, de forma simples e automatizada;",
+      "item3_modal3_services": "Acessibilidade: disponibilidade de conteúdos para o consumo de usuários pelo tempo que quiser;",
+      "item4_modal3_services": "Maleabilidade: qualquer Landing Page pode ser alterada, reavaliada, recomeçada e até pagada quando desejar.",
+      "item5_modal3_services": "Interatividade: criação da comunicação entre empresa e usuário, por meio de comentários, chats, feedbacks, entre outros.",
+
+
+      "title_sec_work": "Projetos Recentes",
+      "subtt_sec_work": "Meu portfólio",
+      "btnAll_work": "Todos",
+      "btnToView_work": "Ver",
+
+
+      "subtt_sec_contact": "Entrar em contato",
+      "title_sec_contact": "Me Chame",
+      "title_content1_contact": "Fale comigo",
+      "btn_content1_contact": "Mandar mensagem",
+
+      "title_content2_p1_contact": "Este formulário está em manutenção! ",
+      "title_content2_p2_contact": " Caso queira entrar em contato, acesse outros meios como ",
+      "title_content2_p3_contact": "WhatsApp, e-mail ou Mensseger...",
+      "name_input_contact": "Nome",
+      "name_placeholder_contact": "Insira seu nome",
+      "mail_placeholder_contact": "Insira seu e-mail",
+      "project_placeholder_contact": "Escreva seu projeto ou deixe um comentário",
+      "project_input_contact": "Projeto | Comentário",
+      "btn_sendForm_contact": "Enviar formulário",
+
+
+      "linkSobre_footer": "Sobre",
+      "linkProjetos_footer": "Projetos",
+      "linkHabilidades_footer": "Habilidades",
+      "copyRight_footer": "Todos os direitos reservados",
+
+
+      "title_typeStep_feedback": "Deixe seu feedback :)",
+      "footer_feedback": "Feito com ♥ por",
+      "msgSuccess_feedback": "Agradeço muito seu feedback ♥!",
+      "btnSuccess_feedback": "Enviar outro feedback",
+      "": ""
    }
 }
