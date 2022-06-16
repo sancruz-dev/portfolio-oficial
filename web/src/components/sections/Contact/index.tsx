@@ -18,7 +18,7 @@ export function Contact() {
                   <h3 className="contact__card-title">E-mail</h3>
                   <span className="contact__card-data">sancruz.dev@gmail.com</span>
 
-                  <a href="mailto:examplemail@correo.com" target="_blank" className="contact__button">
+                  <a href="mailto:sancruz.dev@gmail.com" target="_blank" className="contact__button">
                      {t('btn_content1_contact')} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                   </a>
                </div>
@@ -28,9 +28,12 @@ export function Contact() {
                   <h3 className="contact__card-title">WhatsApp</h3>
                   <span className="contact__card-data">(11) 97287-4030</span>
 
-                  <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!"
-                     target="_blank" className="contact__button">
-                     {t('btn_content1_contact')} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                  <a href="https://api.whatsapp.com/send?phone=5511972874030&text=Olá! Tudo bem? Vi seu portfólio e resolvi entrar em contato pelo WhatsApp :)"
+                     target="_blank" 
+                     className="contact__button"
+                  >
+                     {t('btn_content1_contact')} 
+                     <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                   </a>
                </div>
 
