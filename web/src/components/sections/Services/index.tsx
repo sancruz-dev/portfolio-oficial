@@ -48,7 +48,7 @@ export function Services() {
          right: 'auto',
          bottom: 'auto',
          transform: 'translate(-50%, -50%)',
-         overflow: 'scroll',
+         overflow: 'auto',
       }
    }
 
