@@ -1,14 +1,14 @@
 import nodemailer from 'nodemailer'
 import { MailAdapter, SendMailData } from "../MailAdapter";
-import { SMTP_SENDINBLUE } from '../config/smtp'
+import { SMTP_MAILTRAP } from '../config/smtp'
 
 const transport = nodemailer.createTransport({
-   host: SMTP_SENDINBLUE.host,
-   port: SMTP_SENDINBLUE.port,
+   host: SMTP_MAILTRAP.host,
+   port: SMTP_MAILTRAP.port,
    secure: false,
    auth: {
-      user: SMTP_SENDINBLUE.user,
-      pass: SMTP_SENDINBLUE.pass,
+      user: SMTP_MAILTRAP.user,
+      pass: SMTP_MAILTRAP.pass,
    },
    tls: {
       rejectUnauthorized: false,
