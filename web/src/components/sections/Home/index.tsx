@@ -26,7 +26,7 @@ export function Home() {
          </div>
 
          <div className="home__handle">
-            <img src={sanHome} alt="" className="home__img" />
+            <img src={sanHome} alt="Imagem ilustrativa do Sanmir na seção Home" title='Sanmir Cruz' className="home__img" />
          </div>
 
          <div className="home__social">

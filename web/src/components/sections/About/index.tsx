@@ -10,7 +10,7 @@ export function About() {
       <h2 className="section__title">{t('title_sec_SobreMim')}</h2>
 
       <div className="about__container container grid">
-         <img src={sanAbout} alt="" className="about__img" />
+         <img src={sanAbout} alt="Imagem ilustrativo do Sanmir da seção: 'Sobre Mim'" title='Sanmir Cruz' className="about__img" />
 
          <div className="about__data">
             <div className="about__info">
