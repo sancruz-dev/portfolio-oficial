@@ -42,7 +42,7 @@ export function Header() {
    return <>
       <header className={`header ${handleHeader}`} id="header">
          <nav className="nav container">
-            <a href="#" className="nav__logo">SanCruz</a>
+            <a href="#" className="nav__logo">Sanmir Pereira</a>
 
             <NavbarMenu />
  
