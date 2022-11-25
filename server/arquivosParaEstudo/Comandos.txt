@@ -62,8 +62,9 @@ npx jest --init
    Gera: a pasta prisma, o arquivo '.env' (variáveis de ambiente), e o .gitignore;
 
 • npx prisma migrate dev
-   Inicia a última ação feita no 'schema.prisma', ou seja, se foi criado uma tabela, será inserido o comando: create 'nomeDaTabela';
-   Dev significa que a execução será feita em ambiente de desenvolvimento, no entanto, se for executado para produção, será: npx prisma migrate deploy
+   - Inicia a última ação feita no 'schema.prisma', ou seja, se foi criado uma tabela, será inserido o comando: create 'nomeDaTab ela';
+   - `Dev` significa que a execução será feita em ambiente de desenvolvimento, no entanto, se for executado para produção, será: npx prisma migrate deploy;
+   - Se estiver dando ERRO de TABELA NÃO ENCONTRADA, ou algo relacionado, apague por completo a pasta migrations e crie uma nova. Após isso, substitua o provider de 'postgresql' para 'sqlite', e seguida, rode o comando 'npx prisma migrate dev';
 
 • npx prisma studio
    Interface de navegação para banco de dados;
