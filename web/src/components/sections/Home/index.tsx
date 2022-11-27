@@ -1,5 +1,5 @@
 import cv from '../../../assets/pdf/Sanmir Cruz - CV.pdf'
-import sanHome from '../../../assets/img/san-home.png'
+import sanHome from '../../../assets/img/san-home2.png'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-scroll';
 
