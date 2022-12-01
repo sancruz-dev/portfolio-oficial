@@ -14,9 +14,20 @@
   justify-content: space-between;
   align-items: center;
 }
+.nav__brand {
+  transform: scale(.75);
+}
+.nav__brand.brand_dark {
+  display: var(--display-brand_dark);
+}
+.nav__brand.brand_light {
+  display: var(--display-brand_light);
+}
 .nav__logo
 {
-  color: var(--first-color);
+  display: flex;
+  align-items: center;
+  color: var(--color-slogan);
   font-weight: var(--font-semibold);
   transition: .4s;
 }

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { ChangeLanguageBtn } from '../ChangeLanguageBtn'
 import { NavbarMenu } from './NavbarMenu'
+import brandIconDark from '../../../src/assets/img/brand-icon-dark.svg'
+import brandIconLight from '../../../src/assets/img/brand-icon-light.svg'
 
 
 export function Header() {
@@ -42,7 +44,12 @@ export function Header() {
    return <>
       <header className={`header ${handleHeader}`} id="header">
          <nav className="nav container">
-            <a href="#" className="nav__logo">SanCruz</a>
+            <a href="#" className="nav__logo">
+               <img src={brandIconLight} className="nav__brand brand_light" alt="ícone do logo" />
+               <img src={brandIconDark} className="nav__brand brand_dark" alt="ícone do logo" /> 
+               &nbsp;
+               Dev
+            </a>
 
             <NavbarMenu />
  

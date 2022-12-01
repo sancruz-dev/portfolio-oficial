@@ -160,6 +160,12 @@
       height: calc(var(--header-height) + 1rem);
    }
 
+   .nav__brand {
+      transform: scale(1.1);
+   }
+   
+
+
    .home__handle {
       width: 290px;
       height: 400px;

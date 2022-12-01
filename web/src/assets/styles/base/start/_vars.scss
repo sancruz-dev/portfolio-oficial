@@ -56,11 +56,13 @@
    
    --tab-indicator-width: 2.8rem;
    --tab-indicator-height: 1.5rem;
-
-
-
    --tab-item-inner: 2.2rem;
+   
+   /*========== CHANGE BRAND/SLOGAN HEADER ==========*/
 
+   --display-brand_dark: block;
+   --display-brand_light: none;
+   --color-slogan: var(--aux-color);
    
 }
 
@@ -84,4 +86,7 @@ body.light-theme
 --text-color: hsl(var(--second-hue), 8%, 35%);
 --body-color: hsl(var(--second-hue), 80%, 98%);
 --container-color: #fff;
+--display-brand_dark: none;
+--display-brand_light: block;
+--color-slogan: var(--first-color);
 }
