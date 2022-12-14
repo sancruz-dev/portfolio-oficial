@@ -8,46 +8,141 @@
 ![Node Version](https://img.shields.io/badge/tsNode-^10.7.0-477EEB.svg)
 ![Prisma Version](https://img.shields.io/badge/Prisma-^3.13.0-477EEB.svg)
 
-
-
 ![Thumb of project](./thumb-intro.svg)
 
 ## About this Project
 
-Trata-se de uma aplicação voltada à marca pessoal, cujo objetivo é apresentar quem sou eu! 
+This is an application aimed at personal branding, whose objective is to present who I am!
 
-Portanto, você terá acesso às minhas **principais** habilidades, experiências, conhecimentos e aos meus últimos projetos finalizados.
+Therefore, you will have access to my **main** skills, experiences, knowledge and my latest completed projects.
 
 ## Why?
 
-Este projeto faz parte do meu portfólio pessoal/profissional, então, ficarei muito feliz se você puder me fornecer algum feedback sobre o projeto, código, estrutura ou qualquer coisa que sirva de acréscimo para que eu me torne um desenvolvedor melhor!
+This project is part of my personal/professional portfolio, so, I will be very happy if you can give me some feedback about the project, code, structure or anything that will help me become a better developer!
 
-Ademais, busco reconhecimento pela dedicação que tenho à tecnologia, para que mais pessoas físicas/jurídicas conheçam meu trabalho, pois me preocupo com o usuário, e isso, é uma característica primordial do profissional de T.I, devido o mesmo ser um _solucionador de problemas_.
-
-
+In addition, I seek recognition for my dedication to technology, so that more individuals/legal entities get to know my work, because I am concerned with the user, and this is a primordial characteristic of the IT professional, solve problems.
 
 
-- principais funcionalidades/features
+## Features
+
+- Get information about my core skills organized by knowledge level;
+
+- Get information about my projects and professional experience;
+
+- Give any feedback you have in mind or noticed on the site. _The best insight comes from the user_;
+
+- Contact me via direct links to private chats like WhatsApp, Messenger or professional email;
+
+- If you have a project/problem that needs a programmer to solve it, fill out the form and send it with just one click;
+
+- Was the portfolio not enough? Download my resume for more information;
+
+- Use the system on any device or browser;
+
+- Settings
+  - Choose the theme you prefer: light or dark;
+  - Choose the language you prefer: English or Portuguese-br;
 
 
-- frameworks/libs utilizadas (front e back):
+## Main Frameworks/Libs/Tech's
 
-- Linguagens
+### Front-End
 
-- Métodos e princípios
+- [**Axios**](https://www.npmjs.com/package/axios) - HTTP Client;
+- [**Express**](https://www.npmjs.com/package/express) - server builder;
+- [**Framer Motion**](https://www.npmjs.com/package/framer-motion) - animated moves;
+- [**i18next**](https://www.npmjs.com/package/react-i18next) - app internationalization;
+- [**Phosphor React**](https://www.npmjs.com/package/phosphor-react) - default of project icons;
+- [**React**](https://www.npmjs.com/package/react) - UI build;
+- [**TailwindCSS**](https://www.npmjs.com/package/tailwindcss) - framework CSS;
+- [**Typescript**](https://www.npmjs.com/package/typescript) - javascipt typing;
+- [**Vite**](https://www.npmjs.com/package/vite) - HMR API over native ESM | code bundling with Rollup;
 
-- plataformas de hospedagem
+### Back-End
+
+- [**Cors**](https://www.npmjs.com/package/cors) - middleware activation;
+- [**Jest**](https://www.npmjs.com/package/jest) - unit tests;
+- [**Nodemailer**](https://www.npmjs.com/package/nodemailer) - send emails from Node.js;
+- [**Prisma**](https://www.npmjs.com/package/prisma) - obejct-relational mapping;
+- [**Ts Node**](https://www.npmjs.com/package/ts-node) - typeScript execution engine and REPL for Node.js;
+- [**Typescript**](https://www.npmjs.com/package/typescript) - javascript typing;
+
+## Estratégias, Métodos e Princípios  
+
+- Accessibility;
+- Clean Code;
+- CSS Architecture;
+- Folder Architecture;
+- Responsivity;
+- SEO;
+- SOLID;
+- Unit Tests;
+- User Experience;
 
 
+## Hosting Platforms
+
+- [**Vercel**](https://vercel.com/) - Front-end deployed;
+- [**Railway**](https://railway.app/) - Database cloud;
+
+## Getting Started
+
+### Installing
+
+#### Cloning the Repository
+
+``` 
+git clone https://github.com/sancruz-dev/portfolio-oficial
+```
+
+```
+cd portfolio-oficial
+```
+
+#### Installing Dependencies
+
+Dependencies must be installed on the folder **server** AND **web**: `C:\portfolio-oficial\server` and `C:\portfolio-oficial\web`
+
+```
+npm install 
+```
+
+_or_
+
+```
+yarn 
+```
+
+### Runnning
+
+For the application to run, you will run a single command in two terminals, i.e. in two folders: `server` and `web` (already mentioned above). The command is:
+
+```
+npm run dev
+```
+
+_or_
+
+```
+yarn dev
+```
+
+## Author
+
+- ***Sanmir Cruz***
 
 
-
-
-
-*** 
+<br/>
 
 <div align="center">
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-rounded&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sanmir-cruz/)](https://www.linkedin.com/in/sanmir-cruz/)
+*** 
+
+### Contact here
+
+[![whatsapp Badge](https://img.shields.io/badge/-Whatsapp-25D366?style=flat-rounded&logo=whatsapp&logoColor=white&link&=20=https://wa.me/5511972874030)](https://wa.me/5511972874030)&nbsp;&nbsp;
+[![Discord Badge](https://img.shields.io/badge/-Discord-7289DA?style=flat-rounded&logo=discord&logoColor=white&link&=20=https://discord.gg/vbHXDDDDx7)](https://discord.gg/vbHXDDDDx7)&nbsp;&nbsp;
+[![gmail Badge](https://img.shields.io/badge/-Gmail-D14836?style=flat-rounded&logo=gmail&logoColor=white&link&=20=mailto:sancruz.dev@gmail.com)](mailto:sancruz.dev@gmail.com)&nbsp;&nbsp;
+[![messenger Badge](https://img.shields.io/badge/-Messenger-006AFF?style=flat-rounded&logo=messenger&logoColor=white&link&=20=https://m.me/sanmir.pereira)](https://m.me/sanmir.pereira)&nbsp;&nbsp;
 
 </div>

@@ -4,7 +4,6 @@ import { FeedbackType, feedbackTypes } from "..";
 import { api } from "../../../../libs/api";
 import { CloseButton } from "../../CloseButton";
 import { Loading } from "../Loading";
-import { ScreenshotButton } from "../ScreenshotButton";
 
 interface FeedbackContentStepProps {
    feedbackType: FeedbackType,
@@ -70,11 +69,6 @@ export function FeedbackContentStep(props: FeedbackContentStepProps) {
             onChange={event => setComment(event.target.value)}
          />
          <footer className="flex gap-2 mt-2">
-            {/* <ScreenshotButton
-               screenshot={screenshot}
-               onScreenshotTook={setScreenshot}
-            /> */}
-
             <button
                type="submit"
                disabled={comment.length == 0 || isSendingFeedback}
