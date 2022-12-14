@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00ffff&height=100&section=header"/>
+
 # Portfolio Application - SanCruz
 
 ![Status badge](https://img.shields.io/badge/Status-Finalizado-green.svg)
@@ -54,6 +56,7 @@ In addition, I seek recognition for my dedication to technology, so that more in
 - [**i18next**](https://www.npmjs.com/package/react-i18next) - app internationalization;
 - [**Phosphor React**](https://www.npmjs.com/package/phosphor-react) - default of project icons;
 - [**React**](https://www.npmjs.com/package/react) - UI build;
+- [**Sass**](https://www.npmjs.com/package/sass) - CSS preprocessor;
 - [**TailwindCSS**](https://www.npmjs.com/package/tailwindcss) - framework CSS;
 - [**Typescript**](https://www.npmjs.com/package/typescript) - javascipt typing;
 - [**Vite**](https://www.npmjs.com/package/vite) - HMR API over native ESM | code bundling with Rollup;
@@ -131,12 +134,15 @@ yarn dev
 
 - ***Sanmir Cruz***
 
+## License 
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/sancruz-dev/portfolio-oficial/blob/add-license-1/LICENSE.md) file for details
+
 
 <br/>
 
 <div align="center">
 
-*** 
 
 ### Contact here
 
@@ -146,3 +152,5 @@ yarn dev
 [![messenger Badge](https://img.shields.io/badge/-Messenger-006AFF?style=flat-rounded&logo=messenger&logoColor=white&link&=20=https://m.me/sanmir.pereira)](https://m.me/sanmir.pereira)&nbsp;&nbsp;
 
 </div>
+
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=3355FF&height=100&section=footer"/>
