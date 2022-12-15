@@ -10,7 +10,7 @@
 ![Node Version](https://img.shields.io/badge/tsNode-^10.7.0-477EEB.svg)
 ![Prisma Version](https://img.shields.io/badge/Prisma-^3.13.0-477EEB.svg)
 
-![Thumb of project](./thumb-intro.svg)
+![Thumb of project](./thumb-intro.png)
 
 ## About this Project
 
@@ -66,13 +66,16 @@ In addition, I seek recognition for my dedication to technology, so that more in
 - [**Cors**](https://www.npmjs.com/package/cors) - middleware activation;
 - [**Jest**](https://www.npmjs.com/package/jest) - unit tests;
 - [**Nodemailer**](https://www.npmjs.com/package/nodemailer) - send emails from Node.js;
+- [**PostgreSQL**](https://www.postgresql.org) - DBMS obejct-relational obejct-relational;
 - [**Prisma**](https://www.npmjs.com/package/prisma) - obejct-relational mapping;
+- [**SQLite**](https://www.npmjs.com/package/sqlite) - database engine small, fast and self-contained;
 - [**Ts Node**](https://www.npmjs.com/package/ts-node) - typeScript execution engine and REPL for Node.js;
 - [**Typescript**](https://www.npmjs.com/package/typescript) - javascript typing;
 
-## Estratégias, Métodos e Princípios  
+## Practices, Methods and Principles
 
 - Accessibility;
+- CI/CD;
 - Clean Code;
 - CSS Architecture;
 - Folder Architecture;
