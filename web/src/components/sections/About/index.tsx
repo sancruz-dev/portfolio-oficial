@@ -3,7 +3,18 @@ import { Link } from 'react-scroll'
 import sanAbout from '../../../assets/img/san-about.png'
 
 export function About() {
-   const { t } = useTranslation();
+   const { t } = useTranslation(),
+         MyDay = 26,
+         MyMonth = 9,
+         MyYear = 2003;
+
+   let currentDay = new Date().getDate(),
+      currentMonth = new Date().getMonth() + 1,
+      currentYear = new Date().getFullYear(),
+      age = (currentYear - MyYear);
+
+   currentMonth < MyMonth ? age-- : 0
+   currentMonth == MyMonth && currentDay < MyDay ? age-- : 0
 
    return <section className="about section" id="about">
       <span className="section__subtitle">{t('subtt_sec_SobreMim')}</span>
@@ -34,7 +45,10 @@ export function About() {
             </div>
 
             <p className="about__description">
-               {t('desc_p1_SobreMim')} <b><i>{t('desc_p1__bold_SobreMim')}</i></b>. 
+               {t('desc_p1-1_SobreMim')} 
+               {age}
+               {t('desc_p1-2_SobreMim')} 
+               <b><i>{t('desc_p1__bold_SobreMim')}</i></b>. 
                <br /> <br /> 
                {t('desc_p2_SobreMim')} <b>Web</b> e <b>Mobile</b>.
             </p>
