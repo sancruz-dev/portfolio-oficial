@@ -116,3 +116,27 @@ body.ReactModal__Body--open {
   color: var(--first-color);
   cursor: pointer;
 }
+
+
+// ------ MODAL AVISO ------
+.modalaviso-title {
+  font-size: var(--h3-font-size);
+  color: var(--aux-color);
+  margin-bottom: 1rem;
+}
+
+.modalaviso-description {
+  text-align: left;
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+
+.modalaviso-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}

@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from 'react-modal'
 
 Modal.setAppElement('#root')
 
 export function Services() {
+   const [modalIsOpen, setModalIsOpen] = useState(false)
    const [modalIsOpen1, setModalIsOpen1] = useState(false)
    const [modalIsOpen2, setModalIsOpen2] = useState(false)
    const [modalIsOpen3, setModalIsOpen3] = useState(false)
@@ -22,6 +23,7 @@ export function Services() {
    }
 
    function handleCloseModal() {
+      setModalIsOpen(false)
       setModalIsOpen1(false)
       setModalIsOpen2(false)
       setModalIsOpen3(false)
@@ -54,7 +56,40 @@ export function Services() {
 
    const { t } = useTranslation();
 
+
+   // Define o estado para controlar se a mensagem deve ser exibida ou não
+   const [exibirMensagem, setExibirMensagem] = useState<boolean>(false);
+
+   // useEffect é chamado assim que o componente é montado
+   useEffect(() => {
+      // Define a mensagem para ser exibida
+      setModalIsOpen(true);
+
+      // Define um timer para esconder a mensagem após 5 segundos
+      const timer = setTimeout(() => {
+         setModalIsOpen(false);
+      }, 20000);
+
+      // Retorna uma função de limpeza para limpar o timer
+      return () => clearTimeout(timer);
+   }, []); // A dependência é um array vazio, isso garante que o useEffect só será chamado uma vez
+
    return <section className="services section" id="services">
+      <Modal
+         isOpen={modalIsOpen}
+         onRequestClose={handleCloseModal}
+         style={customStyles}
+      >
+         <i className='bx bx-x modalaviso-close' onClick={handleCloseModal}></i>
+
+         <h3 className="modalaviso-title">{t('title_modalaviso')}</h3>
+         <p className="modalaviso-description">
+            {t('txt1_modalaviso')}
+         </p>
+         <p className="modalaviso-description">
+            {t('txt2_modalaviso')}
+         </p>
+      </Modal>
       <span className="section__subtitle">{t('subtt_sec_services')}</span>
       <h2 className="section__title">{t('title_sec_services')}</h2>
 

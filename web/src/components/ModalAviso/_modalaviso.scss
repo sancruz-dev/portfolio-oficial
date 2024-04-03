@@ -1,0 +1,30 @@
+/* Services modal */
+body.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.modalaviso-title,
+.modalaviso-description {
+  text-align: center;
+}
+
+.modalaviso-title {
+  font-size: var(--h3-font-size);
+  color: var(--aux-color);
+  margin-bottom: 1rem;
+}
+
+.modalaviso-description {
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+
+.modalaviso-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}

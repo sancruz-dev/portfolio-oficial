@@ -1,5 +1,8 @@
 {
    "translation": {
+      "title_modalaviso":"Notice! Website under maintenance 👷🏻‍♂️🛠",
+      "txt1_modalaviso":"Some information about me is out of date, and the feedback feature is currently not working as some features are being fixed....",
+      "txt2_modalaviso":"I ask for a little patience 🙏🏻 the page will soon be back to normal!",
       "hello": "Hello! I'm",
       "systemsDev": "Web Developer",
       "whereYouCan": "where you can find anything you want.",
@@ -17,7 +20,7 @@
       "title_box3_SobreMim": "Support",
       "subtt_box3_SobreMim": "Online 12 hours a day",
       "desc_p1-1_SobreMim": "Hello! let me introduce myself: as you already know my name, can call me San. Well, I'm ",
-      "desc_p1-2_SobreMim": " years old, and I am very happy to be part of this immense world of technology lovers or, in others terms,",
+      "desc_p1-2_SobreMim": " years old, and I am very happy to be part of this immense world of technology lovers or, in others terms, ",
       "desc_p1__bold_SobreMim": "pixel painters",
       "desc_p2_SobreMim": "I'm a Systems Development Technician, and today I create professional projects in the field of development",
       "btn_SobreMim": "My contact",

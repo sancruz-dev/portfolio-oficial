@@ -141,7 +141,7 @@ img {
 /* Color changes in some parts of 
 the website, in light theme */
 .light-theme .scroll-header {
-  box-shadow: 0 2px 4px hsla(0deg, 0%, 1%, 0.1);
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
 }
 
 .light-theme .nav__menu {
@@ -284,6 +284,36 @@ body::after {
   color: var(--first-color);
 }
 
+/* Services modal */
+body.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.modalaviso-title,
+.modalaviso-description {
+  text-align: center;
+}
+
+.modalaviso-title {
+  font-size: var(--h3-font-size);
+  color: var(--aux-color);
+  margin-bottom: 1rem;
+}
+
+.modalaviso-description {
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.modalaviso-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -388,7 +418,7 @@ body::after {
 
 /* Change background header */
 .scroll-header {
-  box-shadow: 0 4px 4px hsla(0deg, 0%, 30%, 0.3);
+  box-shadow: 0 4px 4px hsla(0, 0%, 30%, 0.3);
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
@@ -571,7 +601,6 @@ body::after {
 }
 
 .home__social-link {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   background-color: var(--container-color);
@@ -757,15 +786,8 @@ body::after {
 .skills__percentage {
   display: block;
   background-color: var(--first-color-alt);
-  -webkit-animation: changecolorBar 1.4s linear infinite;
-          animation: changecolorBar 1.4s linear infinite;
+  animation: changecolorBar 1.4s linear infinite;
   filter: brightness(1);
-}
-
-@-webkit-keyframes changecolorBar {
-  50% {
-    filter: brightness(0.5);
-  }
 }
 
 @keyframes changecolorBar {
@@ -894,7 +916,6 @@ body::after {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
   cursor: pointer;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -980,6 +1001,27 @@ body.ReactModal__Body--open {
   cursor: pointer;
 }
 
+.modalaviso-title {
+  font-size: var(--h3-font-size);
+  color: var(--aux-color);
+  margin-bottom: 1rem;
+}
+
+.modalaviso-description {
+  text-align: left;
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+
+.modalaviso-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 .work__container {
   padding-top: 1rem;
 }
@@ -1019,7 +1061,6 @@ body.ReactModal__Body--open {
 }
 
 .work__button {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: var(--first-color);
@@ -1340,11 +1381,9 @@ body.ReactModal__Body--open {
     padding-left: 0;
   }
   .work__container {
-    grid-template-columns: repeat(2, -webkit-max-content);
     grid-template-columns: repeat(2, max-content);
   }
   .contact__container {
-    grid-template-columns: repeat(2, -webkit-max-content);
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     -moz-column-gap: 3rem;

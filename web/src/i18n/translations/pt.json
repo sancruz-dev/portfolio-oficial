@@ -1,5 +1,8 @@
 {
    "translation": {
+      "title_modalaviso":"Aviso! Site em manutenção 👷🏻‍♂️🛠",
+      "txt1_modalaviso":"Algumas informações sobre mim estão desatualizadas, e o recurso de feedback não está funcionando no momento, pois algumas funcionalidades estão sendo corrigidas....",
+      "txt2_modalaviso":"Peço encarecidamente um pouco de paciência 🙏🏻 que logo logo a página voltará ao normal!",
       "hello": "Olá, eu sou",
       "systemsDev": "Desenvolvedor Web",
       "whereYouCan": "Onde você encontra qualquer coisa que quiser.",
@@ -17,7 +20,7 @@
       "title_box3_SobreMim": "Suporte",
       "subtt_box3_SobreMim": "Online 12 horas por dia",
       "desc_p1-1_SobreMim": "Olá! Deixe-me me apresentar: como já sabe meu nome, pode me chamar de San. Bom, tenho ",
-      "desc_p1-2_SobreMim": " anos de idade, e sou muito feliz por fazer parte desse imenso mundo dos apaixonados por tecnologia ou, em outros termos,",
+      "desc_p1-2_SobreMim": " anos de idade, e sou muito feliz por fazer parte desse imenso mundo dos apaixonados por tecnologia ou, em outros termos, ",
       "desc_p1__bold_SobreMim": "pintores de pixel",
       "desc_p2_SobreMim": "Sou técnico em Desenvolvimento de Sistemas, e hoje crio projetos profissionais no ramo do desenvolvimento",
       "btn_SobreMim": "Meu contato",
