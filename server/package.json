@@ -46,7 +46,8 @@
     "test": "jest",
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "postinstall": "prisma generate"
   },
   "devDependencies": {
     "@swc/jest": "^0.2.20",
