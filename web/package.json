@@ -8,6 +8,9 @@
     "email": "sancruz.dev@gmail.com",
     "url": "https://sancruz.vercel.app/"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "contributors": [
     {
       "name": "Sanmir Cruz",
