@@ -8,13 +8,9 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: [
-      "https://sancruz.vercel.app",
-      "http://localhost:3333",
-      "*"
-   ], // ou "*" apenas para testes
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "Accept"]
 }));
 
 app.use(express.json());// [A]...
