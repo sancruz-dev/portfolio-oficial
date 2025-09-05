@@ -8,17 +8,35 @@
     "email": "sancruz.dev@gmail.com",
     "url": "https://sancruz.vercel.app/"
   },
-  "contributors": [{
-    "name": "Sanmir Cruz",
-    "email": "sancruz.dev@gmail.com",
-    "url": "https://sancruz.vercel.app/"
-  }],
+  "contributors": [
+    {
+      "name": "Sanmir Cruz",
+      "email": "sancruz.dev@gmail.com",
+      "url": "https://sancruz.vercel.app/"
+    }
+  ],
   "homepage": "https://sancruz.vercel.app/",
   "repository": "https://github.com/sancruz-dev/portfolio-oficial",
   "bugs": {
     "url": "https://github.com/sancruz-dev/portfolio-oficial/issues"
   },
-  "keywords": ["Sancruz", "Sanmir Cruz", "sancruzdev", "sancruz.dev", "Sanmir", "San", "frontend", "web frontend", "desenvolvedor frontend", "desenvolvedor web", "react dev", "react js", "javascript", "js", "desenvolvedor de sistemas"],
+  "keywords": [
+    "Sancruz",
+    "Sanmir Cruz",
+    "sancruzdev",
+    "sancruz.dev",
+    "Sanmir",
+    "San",
+    "frontend",
+    "web frontend",
+    "desenvolvedor frontend",
+    "desenvolvedor web",
+    "react dev",
+    "react js",
+    "javascript",
+    "js",
+    "desenvolvedor de sistemas"
+  ],
   "license": "MIT License",
   "main": "index.js",
   "scripts": {
@@ -44,6 +62,7 @@
   "dependencies": {
     "@prisma/client": "^3.13.0",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "nodemailer": "^6.7.5"
   }
 }
