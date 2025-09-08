@@ -11,13 +11,19 @@ RUN apt-get update -y && apt-get install -y \
 COPY package*.json ./
 COPY prisma ./prisma/
 
-RUN npm ci --only=production
+# Usar npm ci (não --only=production) para ter acesso ao TypeScript
+RUN npm ci
+
 RUN npx prisma generate
 
 COPY . .
+
+# Agora o tsc estará disponível
 RUN npm run build
+
+# Opcional: remover devDependencies após build para otimizar
+RUN npm prune --production
 
 EXPOSE 3333
 
-# Criar tabelas no startup e iniciar
 CMD ["sh", "-c", "npx prisma db push --accept-data-loss && npm start"]
