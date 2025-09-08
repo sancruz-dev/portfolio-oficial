@@ -9,48 +9,78 @@ import { SubmitFormService } from './services/SubmitFormService';
 
 export const routes = express.Router()
 
-
 routes.post('/feedbacks', async (req, res) => {
-   const { type, comment, screenshot } = req.body;
+   try {
+      console.log('Received feedback request:', req.body);
+      
+      const { type, comment, screenshot } = req.body;
 
-   const prismaFeedbackRepository = new PrismaFeedbackRepository();
+      if (!type || !comment) {
+         return res.status(400).json({ 
+            error: 'Type and comment are required',
+            received: { type, comment, screenshot: !!screenshot }
+         });
+      }
 
-   const nodemailerMailAdapter = new NodemailerMailAdapter();
+      const prismaFeedbackRepository = new PrismaFeedbackRepository();
+      const nodemailerMailAdapter = new NodemailerMailAdapter();
+      const submitFeedbackService = new SubmitFeedbackService(
+         prismaFeedbackRepository, 
+         nodemailerMailAdapter
+      );
 
-   const submitFeedbackService = new SubmitFeedbackService(
-      prismaFeedbackRepository, nodemailerMailAdapter);
-
-   await submitFeedbackService.execute({
-      type,
-      comment, 
-      screenshot,
-   });   
-   
-   return res.status(201).send();
+      await submitFeedbackService.execute({
+         type,
+         comment, 
+         screenshot,
+      });   
+      
+      console.log('Feedback processed successfully');
+      return res.status(201).json({ message: 'Feedback sent successfully' });
+      
+   } catch (error) {
+      console.error('Error processing feedback:', error);
+      return res.status(500).json({ 
+         error: 'Internal server error',
+         message: error instanceof Error ? error.message : 'Unknown error'
+      });
+   }
 });
 
 routes.post('/form', async (req, res) => {
-   const { name, email, comment } = req.body;
+   try {
+      console.log('Received form request:', req.body);
+      
+      const { name, email, comment } = req.body;
 
-   const prismaFormRepository = new PrismaFormRepository();
+      if (!name || !email || !comment) {
+         return res.status(400).json({ 
+            error: 'Name, email and comment are required',
+            received: { name, email, comment }
+         });
+      }
 
-   const nodemailerMailAdapterGoogle = new NodemailerMailAdapterGoogle();
+      const prismaFormRepository = new PrismaFormRepository();
+      const nodemailerMailAdapterGoogle = new NodemailerMailAdapterGoogle();
+      const submitFormService = new SubmitFormService(
+         prismaFormRepository, 
+         nodemailerMailAdapterGoogle
+      );
 
-   const submitFormService = new SubmitFormService(
-      prismaFormRepository, nodemailerMailAdapterGoogle);
+      await submitFormService.execute({
+         name, 
+         email,
+         comment
+      });
 
-   await submitFormService.execute({
-      name, 
-      email,
-      comment
-   });
-
-   return res.status(201).send();
+      console.log('Form processed successfully');
+      return res.status(201).json({ message: 'Form sent successfully' });
+      
+   } catch (error) {
+      console.error('Error processing form:', error);
+      return res.status(500).json({ 
+         error: 'Internal server error',
+         message: error instanceof Error ? error.message : 'Unknown error'
+      });
+   }
 });
-
-
-
-
-
-
-
