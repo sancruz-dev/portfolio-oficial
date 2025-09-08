@@ -27,5 +27,5 @@ RUN npm prune --production
 
 EXPOSE 3333
 
-# Executar migrations e depois iniciar o servidor
-CMD ["sh", "-c", "npx prisma migrate deploy && npm start"]
+# db push cria as tabelas baseadas no schema.prisma
+CMD ["sh", "-c", "npx prisma db push --accept-data-loss && npm start"]
