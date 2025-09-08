@@ -7,10 +7,17 @@ dotenv.config();
 
 const app = express();
 
+// CORS configurado para produção
 app.use(cors({
-  origin: "*",
+  origin: [
+    "https://sancruz.vercel.app",
+    "https://portfolio-oficial-web.vercel.app", 
+    "http://localhost:3222",
+    "http://localhost:3000"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization", "Accept"]
+  allowedHeaders: ["Content-Type", "Authorization", "Accept"],
+  credentials: true
 }));
 
 app.use(express.json());// [A]...
