@@ -27,7 +27,7 @@ COPY . .
 RUN npm run build
 
 # Remove dependências de desenvolvimento para otimizar
-RUN npm prune --production
+# RUN npm prune --production
 
 # Expõe a porta
 EXPOSE 3333
