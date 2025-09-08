@@ -14,6 +14,7 @@ COPY prisma ./prisma/
 # Usar npm ci (não --only=production) para ter acesso ao TypeScript
 RUN npm ci
 
+# Gerar o Prisma Client
 RUN npx prisma generate
 
 COPY . .
@@ -26,4 +27,6 @@ RUN npm prune --production
 
 EXPOSE 3333
 
-CMD ["sh", "-c", "npx prisma db push --accept-data-loss && npm start"]
+# Importante: não usar npx prisma db push no CMD em produção
+# A Railway já deve ter o banco configurado
+CMD ["npm", "start"]
