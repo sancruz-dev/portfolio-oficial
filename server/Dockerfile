@@ -27,6 +27,5 @@ RUN npm prune --production
 
 EXPOSE 3333
 
-# Importante: não usar npx prisma db push no CMD em produção
-# A Railway já deve ter o banco configurado
-CMD ["npm", "start"]
+# Executar migrations e depois iniciar o servidor
+CMD ["sh", "-c", "npx prisma migrate deploy && npm start"]
