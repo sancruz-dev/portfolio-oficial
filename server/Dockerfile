@@ -2,49 +2,30 @@ FROM node:18-slim
 
 WORKDIR /app
 
-# Instalar dependências do sistema
 RUN apt-get update -y && apt-get install -y \
     openssl \
     libssl-dev \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Copiar arquivos de dependência
 COPY package*.json ./
 COPY prisma ./prisma/
 
-# Instalar TODAS as dependências (incluindo devDependencies para o build)
+# Usar npm ci (não --only=production) para ter acesso ao TypeScript
 RUN npm ci
 
-# Gerar Prisma Client
+# Gerar o Prisma Client
 RUN npx prisma generate
 
-# Copiar código fonte
 COPY . .
 
-# Build da aplicação
+# Agora o tsc estará disponível
 RUN npm run build
 
-# Agora remover devDependencies para otimizar a imagem final
+# Opcional: remover devDependencies após build para otimizar
 RUN npm prune --production
 
-# Limpar cache do npm
-RUN npm cache clean --force
-
-# Criar usuário não-root
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nodejs
-
-# Alterar ownership
-RUN chown -R nodejs:nodejs /app
-USER nodejs
-
-# Expor porta
 EXPOSE 3333
 
-# Healthcheck
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:3333/health || exit 1
-
-# Comando de inicialização mais robusto
-CMD ["sh", "-c", "npx prisma db push --accept-data-loss --force-reset && npm start"]
+# db push cria as tabelas baseadas no schema.prisma
+CMD ["sh", "-c", "npx prisma db push --accept-data-loss && npm start"]
