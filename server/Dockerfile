@@ -13,8 +13,8 @@ RUN apt-get update -y && apt-get install -y \
 COPY package*.json ./
 COPY prisma ./prisma/
 
-# Instalar dependências
-RUN npm ci --only=production
+# Instalar TODAS as dependências (incluindo devDependencies para o build)
+RUN npm ci
 
 # Gerar Prisma Client
 RUN npx prisma generate
@@ -24,6 +24,9 @@ COPY . .
 
 # Build da aplicação
 RUN npm run build
+
+# Agora remover devDependencies para otimizar a imagem final
+RUN npm prune --production
 
 # Limpar cache do npm
 RUN npm cache clean --force
