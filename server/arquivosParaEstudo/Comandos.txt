@@ -43,6 +43,8 @@ npx prisma migrate dev
 
 npx prisma studio 
 
+railway run npx prisma studio
+
 npx jest --init
 
 
@@ -68,6 +70,9 @@ npx jest --init
 
 • npx prisma studio
    Interface de navegação para banco de dados;
+
+• railway run npx prisma studio
+   Interface de navegação para banco de dados na Railway;
 
 • npx jest --init (inicialização da configuração Jest)
    Pergunta 1. Quer add um script de teste (y/n)? yes
