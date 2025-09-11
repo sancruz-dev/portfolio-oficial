@@ -8,126 +8,151 @@ import { SubmitFormService } from './services/SubmitFormService';
 
 export const routes = express.Router()
 
-// Função helper para criar timeout
-const withTimeout = <T>(promise: Promise<T>, timeoutMs: number = 10000): Promise<T> => {
-  return Promise.race([
-    promise,
-    new Promise<never>((_, reject) =>
-      setTimeout(() => reject(new Error(`Operação timeout após ${timeoutMs}ms`)), timeoutMs)
-    )
-  ]);
-};
-
 routes.post('/feedbacks', async (req, res) => {
+  const startTime = Date.now();
+  
   try {
-    console.log('📨 Recebendo feedback:', req.body);
+    console.log('📨 [FEEDBACK] Iniciando processamento...');
     
     const { type, comment, screenshot } = req.body;
 
     // Validação básica
     if (!type || !comment) {
-      console.log('❌ Dados inválidos');
+      console.log('❌ [FEEDBACK] Dados inválidos');
       return res.status(400).json({ 
-        error: 'Type and comment são obrigatórios',
-        received: { type: !!type, comment: !!comment, screenshot: !!screenshot }
+        error: 'Type and comment são obrigatórios'
       });
     }
 
-    console.log('⏳ Processando feedback...');
+    console.log('⏳ [FEEDBACK] Salvando no banco primeiro...');
 
-    // Criar instâncias
+    // ESTRATÉGIA: Salvar no banco PRIMEIRO (operação rápida)
     const prismaFeedbackRepository = new PrismaFeedbackRepository();
+    await prismaFeedbackRepository.create({ type, comment, screenshot });
+    
+    const dbSaveTime = Date.now() - startTime;
+    console.log(`💾 [FEEDBACK] Salvo no banco em ${dbSaveTime}ms`);
+    
+    // RESPOSTA IMEDIATA para o usuário
+    res.status(201).json({ 
+      success: true,
+      message: 'Feedback enviado com sucesso',
+      processTime: `${dbSaveTime}ms`
+    });
+
+    // PROCESSO EM BACKGROUND: Tentar enviar email (não bloquear resposta)
+    console.log('📧 [FEEDBACK] Enviando email em background...');
+    
     const nodemailerMailAdapter = new NodemailerMailAdapter();
     const submitFeedbackService = new SubmitFeedbackService(
       prismaFeedbackRepository, 
       nodemailerMailAdapter
     );
 
-    // Executar com timeout
-    await withTimeout(
-      submitFeedbackService.execute({ type, comment, screenshot }),
-      15000 // 15 segundos
-    );
-    
-    console.log('✅ Feedback processado com sucesso');
-    return res.status(201).json({ 
-      success: true,
-      message: 'Feedback enviado com sucesso'
+    // Email em background com timeout de 5 segundos
+    Promise.race([
+      nodemailerMailAdapter.sendMail({
+        sendlerName: `Feedback Portfolio`,
+        sendlerEmail: `noreply@portfolio.com`,
+        subject: 'Novo feedback',
+        body: [
+          `<div style="font-family: sans-serif; font-size: 16px; color: #333">`,
+          `<p>Tipo do feedback: ${type}</p>`,
+          `<p>Comentário: ${comment}</p>`,
+          screenshot ? `<p>Screenshot anexado</p>` : ``,
+          `</div>`
+        ].join('\n')
+      }),
+      new Promise((_, reject) => 
+        setTimeout(() => reject(new Error('Email timeout')), 5000)
+      )
+    ]).then(() => {
+      const totalTime = Date.now() - startTime;
+      console.log(`✅ [FEEDBACK] Email enviado com sucesso em ${totalTime}ms`);
+    }).catch((error) => {
+      const totalTime = Date.now() - startTime;
+      console.log(`⚠️ [FEEDBACK] Email falhou após ${totalTime}ms, mas dados salvos:`, error.message);
     });
     
   } catch (error) {
-    console.error('❌ Erro ao processar feedback:', error);
+    const duration = Date.now() - startTime;
+    console.error(`❌ [FEEDBACK] Erro após ${duration}ms:`, error);
     
-    // Retornar erro específico
-    if (error instanceof Error && error.message.includes('timeout')) {
-      return res.status(408).json({ 
-        error: 'Timeout na operação',
-        message: 'A operação demorou muito para responder. Tente novamente.'
-      });
-    }
-
     return res.status(500).json({ 
       error: 'Erro interno do servidor',
-      message: process.env.NODE_ENV === 'development' 
-        ? (error instanceof Error ? error.message : 'Erro desconhecido')
-        : 'Algo deu errado. Tente novamente.'
+      message: 'Algo deu errado. Tente novamente.'
     });
   }
 });
 
 routes.post('/form', async (req, res) => {
+  const startTime = Date.now();
+  
   try {
-    console.log('📨 Recebendo formulário:', req.body);
+    console.log('📨 [FORM] Iniciando processamento...');
     
     const { name, email, comment } = req.body;
 
     // Validação básica
     if (!name || !email || !comment) {
-      console.log('❌ Dados inválidos');
+      console.log('❌ [FORM] Dados inválidos');
       return res.status(400).json({ 
-        error: 'Name, email e comment são obrigatórios',
-        received: { name: !!name, email: !!email, comment: !!comment }
+        error: 'Name, email e comment são obrigatórios'
       });
     }
 
-    console.log('⏳ Processando formulário...');
+    console.log('⏳ [FORM] Salvando no banco primeiro...');
 
-    // Criar instâncias
+    // ESTRATÉGIA: Salvar no banco PRIMEIRO
     const prismaFormRepository = new PrismaFormRepository();
-    const nodemailerMailAdapterGoogle = new NodemailerMailAdapterGoogle();
-    const submitFormService = new SubmitFormService(
-      prismaFormRepository, 
-      nodemailerMailAdapterGoogle
-    );
-
-    // Executar com timeout
-    await withTimeout(
-      submitFormService.execute({ name, email, comment }),
-      15000 // 15 segundos
-    );
-
-    console.log('✅ Formulário processado com sucesso');
-    return res.status(201).json({ 
+    await prismaFormRepository.create({ name, email, comment });
+    
+    const dbSaveTime = Date.now() - startTime;
+    console.log(`💾 [FORM] Salvo no banco em ${dbSaveTime}ms`);
+    
+    // RESPOSTA IMEDIATA para o usuário
+    res.status(201).json({ 
       success: true,
-      message: 'Formulário enviado com sucesso'
+      message: 'Formulário enviado com sucesso',
+      processTime: `${dbSaveTime}ms`
+    });
+
+    // EMAIL EM BACKGROUND
+    console.log('📧 [FORM] Enviando email em background...');
+    
+    const nodemailerMailAdapterGoogle = new NodemailerMailAdapterGoogle();
+
+    Promise.race([
+      nodemailerMailAdapterGoogle.sendMail({
+        sendlerName: `${name}`,
+        sendlerEmail: `${email}`,
+        subject: 'Novo Form',
+        body: [
+          `<div style="font-family: sans-serif; font-size: 16px; color: #333">`,
+          `<p>Nome: ${name}</p>`,
+          `<p>Email: ${email}</p>`,
+          `<p>Comentário: ${comment}</p>`,
+          `</div>`
+        ].join('\n')
+      }),
+      new Promise((_, reject) => 
+        setTimeout(() => reject(new Error('Email timeout')), 5000)
+      )
+    ]).then(() => {
+      const totalTime = Date.now() - startTime;
+      console.log(`✅ [FORM] Email enviado com sucesso em ${totalTime}ms`);
+    }).catch((error) => {
+      const totalTime = Date.now() - startTime;
+      console.log(`⚠️ [FORM] Email falhou após ${totalTime}ms, mas dados salvos:`, error.message);
     });
     
   } catch (error) {
-    console.error('❌ Erro ao processar formulário:', error);
+    const duration = Date.now() - startTime;
+    console.error(`❌ [FORM] Erro após ${duration}ms:`, error);
     
-    // Retornar erro específico
-    if (error instanceof Error && error.message.includes('timeout')) {
-      return res.status(408).json({ 
-        error: 'Timeout na operação',
-        message: 'A operação demorou muito para responder. Tente novamente.'
-      });
-    }
-
     return res.status(500).json({ 
       error: 'Erro interno do servidor',
-      message: process.env.NODE_ENV === 'development' 
-        ? (error instanceof Error ? error.message : 'Erro desconhecido')
-        : 'Algo deu errado. Tente novamente.'
+      message: 'Algo deu errado. Tente novamente.'
     });
   }
 });
