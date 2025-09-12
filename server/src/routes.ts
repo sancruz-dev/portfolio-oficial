@@ -67,7 +67,7 @@ routes.post('/feedbacks', async (req, res) => {
 
     } catch (error) {
       const totalTime = Date.now() - startTime;
-      console.log(`⚠️ [FEEDBACK] Email falhou após ${totalTime}ms, mas dados salvos:`, error.message);
+      console.log(`⚠️ [FEEDBACK] Email falhou após ${totalTime}ms, mas dados salvos:`, error);
     }
     
   } catch (error) {
