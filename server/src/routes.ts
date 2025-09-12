@@ -49,8 +49,7 @@ routes.post('/feedbacks', async (req, res) => {
       nodemailerMailAdapter
     );
 
-    // Email em background com timeout de 20 segundos
-    Promise.race([
+    try {
       nodemailerMailAdapter.sendMail({
         sendlerName: `Feedback Portfolio`,
         sendlerEmail: `noreply@portfolio.com`,
@@ -62,17 +61,14 @@ routes.post('/feedbacks', async (req, res) => {
           screenshot ? `<p>Screenshot anexado</p>` : ``,
           `</div>`
         ].join('\n')
-      }),
-      new Promise((_, reject) => 
-        setTimeout(() => reject(new Error('Email timeout')), 20000)
-      )
-    ]).then(() => {
+      });
       const totalTime = Date.now() - startTime;
       console.log(`✅ [FEEDBACK] Email enviado com sucesso em ${totalTime}ms`);
-    }).catch((error) => {
+
+    } catch (error) {
       const totalTime = Date.now() - startTime;
       console.log(`⚠️ [FEEDBACK] Email falhou após ${totalTime}ms, mas dados salvos:`, error.message);
-    });
+    }
     
   } catch (error) {
     const duration = Date.now() - startTime;
