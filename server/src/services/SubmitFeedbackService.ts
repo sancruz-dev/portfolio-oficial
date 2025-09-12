@@ -50,15 +50,5 @@ export class SubmitFeedbackService {
             `</div>`
          ].join('\n')
       })
-
-      /** JEITO ERRADO PARA SALVAR NO BD (Sem o princípio de dependency inversion)
-
-      const prismaFeedbackRepository = new PrismaFeedbackRepository();
-
-      await prismaFeedbackRepository.create({
-         type,
-         comment, 
-         screenshot,
-      }) */
    }
 }

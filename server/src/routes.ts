@@ -49,7 +49,7 @@ routes.post('/feedbacks', async (req, res) => {
       nodemailerMailAdapter
     );
 
-    // Email em background com timeout de 5 segundos
+    // Email em background com timeout de 20 segundos
     Promise.race([
       nodemailerMailAdapter.sendMail({
         sendlerName: `Feedback Portfolio`,
@@ -64,7 +64,7 @@ routes.post('/feedbacks', async (req, res) => {
         ].join('\n')
       }),
       new Promise((_, reject) => 
-        setTimeout(() => reject(new Error('Email timeout')), 5000)
+        setTimeout(() => reject(new Error('Email timeout')), 20000)
       )
     ]).then(() => {
       const totalTime = Date.now() - startTime;
