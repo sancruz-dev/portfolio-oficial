@@ -1,10 +1,8 @@
 import express from 'express'
-import { NodemailerMailAdapter } from './contracts/nodemailer/NodemailerMailAdapter';
-import { NodemailerMailAdapterGoogle } from './contracts/nodemailer/NodemailerMailAdapterGoogle';
+import { ResendMailAdapter } from './contracts/resend/ResendMailAdapter';
 import { PrismaFeedbackRepository } from './res/prisma/PrismaFeedbacksRepository';
-import { SubmitFeedbackService } from './services/SubmitFeedbackService';
 import { PrismaFormRepository } from './res/prisma/PrismaFormsRepository';
-import { SubmitFormService } from './services/SubmitFormService';
+
 
 export const routes = express.Router()
 
@@ -43,14 +41,10 @@ routes.post('/feedbacks', async (req, res) => {
     // PROCESSO EM BACKGROUND: Tentar enviar email (não bloquear resposta)
     console.log('📧 [FEEDBACK] Enviando email em background...');
     
-    const nodemailerMailAdapter = new NodemailerMailAdapter();
-    const submitFeedbackService = new SubmitFeedbackService(
-      prismaFeedbackRepository, 
-      nodemailerMailAdapter
-    );
+    const resendMailAdapter = new ResendMailAdapter();
 
     try {
-      nodemailerMailAdapter.sendMail({
+      resendMailAdapter.sendMail({
         sendlerName: `Feedback Portfolio`,
         sendlerEmail: `noreply@portfolio.com`,
         subject: 'Novo feedback',
@@ -116,10 +110,10 @@ routes.post('/form', async (req, res) => {
     // EMAIL EM BACKGROUND
     console.log('📧 [FORM] Enviando email em background...');
     
-    const nodemailerMailAdapterGoogle = new NodemailerMailAdapterGoogle();
+    const resendMailAdapter = new ResendMailAdapter();
 
     Promise.race([
-      nodemailerMailAdapterGoogle.sendMail({
+      resendMailAdapter.sendMail({
         sendlerName: `${name}`,
         sendlerEmail: `${email}`,
         subject: 'Novo Form',

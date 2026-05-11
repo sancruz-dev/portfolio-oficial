@@ -65,7 +65,7 @@ In addition, I seek recognition for my dedication to technology, so that more in
 
 - [**Cors**](https://www.npmjs.com/package/cors) - middleware activation;
 - [**Jest**](https://www.npmjs.com/package/jest) - unit tests;
-- [**Nodemailer**](https://www.npmjs.com/package/nodemailer) - send emails from Node.js;
+- [**Resend**](https://www.npmjs.com/package/resend) - send emails from Node.js;
 - [**PostgreSQL**](https://www.postgresql.org) - DBMS obejct-relational obejct-relational;
 - [**Prisma**](https://www.npmjs.com/package/prisma) - obejct-relational mapping;
 - [**SQLite**](https://www.npmjs.com/package/sqlite) - database engine small, fast and self-contained;
