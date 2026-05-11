@@ -68,7 +68,11 @@ npx jest --init
    - `Dev` significa que a execução será feita em ambiente de desenvolvimento, no entanto, se for executado para produção, será: npx prisma migrate deploy;
    - Se estiver dando ERRO de TABELA NÃO ENCONTRADA, ou algo relacionado, apague por completo a pasta migrations e crie uma nova. Após isso, substitua o provider de 'postgresql' para 'sqlite', e seguida, rode o comando 'npx prisma migrate dev';
 
-• npx prisma studio
+• npx prisma@3.13.0 studio (forçar versão)
+  ou
+  railway run npx prisma@3.13.0 studio (remoto)
+  ou
+  $env:DATABASE_URL="postgresql://postgres:RDPRhVVlTfNrwLhGQSiHpIPesiVeKgnO@yamabiko.proxy.rlwy.net:32483/railway"; npx prisma@3.13.0 studio
    Interface de navegação para banco de dados;
 
 • railway run npx prisma studio

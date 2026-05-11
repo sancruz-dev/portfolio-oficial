@@ -91,13 +91,15 @@ In addition, I seek recognition for my dedication to technology, so that more in
 - [**Vercel**](https://vercel.com/) - Front-end deployed;
 - [**Railway**](https://railway.app/) - Database cloud;
 
+
+
 ## Getting Started
 
 ### Installing
 
 #### Cloning the Repository
 
-``` 
+```
 git clone https://github.com/sancruz-dev/portfolio-oficial
 ```
 
@@ -107,31 +109,54 @@ cd portfolio-oficial
 
 #### Installing Dependencies
 
-Dependencies must be installed on the folder **server** AND **web**: `C:\portfolio-oficial\server` and `C:\portfolio-oficial\web`
+Dependencies must be installed on the folder **server** AND **web**:
 
 ```
 npm install 
 ```
 
-_or_
+#### Configuring Environment Variables
+
+Create a `.env` file inside the **server** folder:
 
 ```
-yarn 
+cd server
 ```
 
-### Runnning
+Then create the file with one of the configurations below:
 
-For the application to run, you will run a single command in two terminals, i.e. in two folders: `server` and `web` (already mentioned above). The command is:
+**Remote database (Railway):**
+```
+DATABASE_URL=postgresql://user:password@yamabiko.proxy.rlwy.net:PORT/railway
+```
+> Get the `DATABASE_PUBLIC_URL` from Railway dashboard → Postgres → Variables.
+
+**Local database (SQLite):**
+```
+DATABASE_URL="file:./dev.db"
+PORT=3333
+NODE_ENV=development
+```
+> Use this if you don't have a Railway account or want to run fully offline.
+
+### Running
+
+Run the following command in two separate terminals, one inside **server** and one inside **web**:
 
 ```
 npm run dev
 ```
 
-_or_
+### Viewing the database (Prisma Studio)
+
+Inside the **server** folder:
 
 ```
-yarn dev
+npx prisma@3.13.0 studio
 ```
+
+> Always use `prisma@3.13.0` to avoid version conflicts with newer Prisma versions.
+
 
 ## Author
 
@@ -149,10 +174,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ### Contact here
 
-[![whatsapp Badge](https://img.shields.io/badge/-Whatsapp-25D366?style=flat-rounded&logo=whatsapp&logoColor=white&link&=20=https://wa.me/5511972874030)](https://wa.me/5511972874030)&nbsp;&nbsp;
 [![Discord Badge](https://img.shields.io/badge/-Discord-7289DA?style=flat-rounded&logo=discord&logoColor=white&link&=20=https://discord.gg/vbHXDDDDx7)](https://discord.gg/vbHXDDDDx7)&nbsp;&nbsp;
 [![gmail Badge](https://img.shields.io/badge/-Gmail-D14836?style=flat-rounded&logo=gmail&logoColor=white&link&=20=mailto:sancruz.dev@gmail.com)](mailto:sancruz.dev@gmail.com)&nbsp;&nbsp;
-[![messenger Badge](https://img.shields.io/badge/-Messenger-006AFF?style=flat-rounded&logo=messenger&logoColor=white&link&=20=https://m.me/sanmir.pereira)](https://m.me/sanmir.pereira)&nbsp;&nbsp;
 
 </div>
 
