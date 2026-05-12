@@ -27,7 +27,7 @@
   --container-color: hsl(var(--second-hue), 32%, 12%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -362,8 +362,7 @@ body.ReactModal__Body--open {
   width: 90%;
   border-radius: 0.5rem;
   padding: 1rem 2.25rem;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: 0.4s; /* light mode animatio */
 }
 
@@ -379,7 +378,6 @@ body.ReactModal__Body--open {
   font-size: 1.25rem;
   padding: 0.4rem;
   color: var(--text-color);
-  /* Active link */
 }
 .nav__list .nav__link .tab-item-inner {
   position: absolute;
@@ -397,6 +395,9 @@ body.ReactModal__Body--open {
   box-shadow: 0 -5px 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
   transition: 0.4s;
   transition-delay: 0.1s;
+}
+.nav__list .nav__link {
+  /* Active link */
 }
 .nav__list .nav__link.active {
   background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
@@ -1446,7 +1447,7 @@ body.ReactModal__Body--open {
   }
   .about__box {
     text-align: center;
-    padding: 1rem 1.25rem;
+    padding: 1rem 0.5rem;
   }
   .about__description {
     padding: 0 1.5rem 0 0;

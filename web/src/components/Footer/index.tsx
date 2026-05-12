@@ -28,29 +28,11 @@ export function Footer() {
             </ul>
 
             <ul className="footer__social">
-               <a 
-                  href="https://www.facebook.com/sanmir.pereira" 
-                  target="__blank"
+               <a href="https://www.linkedin.com/in/sanmir-cruz/" 
+                  target="_blank" 
                   className="footer__social-link"
-                  title="Me siga no Facebook"
-               >
-                  <i className="bx bxl-facebook"></i>
-               </a>
-               <a 
-                  href="https://www.instagram.com/sancruz_dev" 
-                  target="__blank"
-                  className="footer__social-link"
-                  title="Me siga no Instagram"
-               >
-                  <i className="bx bxl-instagram"></i>
-               </a>
-               <a 
-                  href="https://twitter.com/SanCruz_Dev" 
-                  target="__blank"
-                  className="footer__social-link"
-                  title="Me siga no Twitter"
-               >
-                  <i className="bx bxl-twitter"></i>
+                  title='Acesse meu LinkedIn'>
+                  <i className='bx bxl-linkedin-square'></i>
                </a>
             </ul>
 

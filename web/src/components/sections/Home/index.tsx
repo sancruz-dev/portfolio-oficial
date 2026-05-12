@@ -43,12 +43,6 @@ export function Home() {
                title='Acesse meu Github'>
                <i className='bx bxl-github'></i>
             </a>
-            <a href="https://codepen.io/sancruz-dev" 
-               target="_blank" 
-               className="home__social-link" 
-               title='Acesse meu CodePen'>
-               <i className='bx bxl-codepen'></i>
-            </a>
          </div>
 
          <Link to="about" className="home__scroll">
