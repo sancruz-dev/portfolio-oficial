@@ -9,9 +9,10 @@ import work2 from '../../../assets/img/Work_imgs/ECommerceRivierTCC.png'
 import work3 from '../../../assets/img/Work_imgs/sanDSMovie.png'
 import work4 from '../../../assets/img/Work_imgs/feedbackSanNlw.png'
 import work5 from '../../../assets/img/Work_imgs/calcJsPw.png'
-import work6 from '../../../assets/img/Work_imgs/sanTasks.png'
+import work6 from '../../../assets/img/Work_imgs/vehicle-management.png'
 import work7 from '../../../assets/img/Work_imgs/prototipoRivier.png'
 import work8 from '../../../assets/img/Work_imgs/prototipoArtigosDesign.png'
+
 import { useTranslation } from 'react-i18next'
 
 export function Work() {
@@ -36,18 +37,18 @@ export function Work() {
                genre_ids: [2],
             },
             {
+               id: 6,
+               title: "Vehicle Management | Software Engineering",
+               img: work6,
+               link: 'https://github.com/sancruz-dev/dotnet-vehicle-management',
+               genre_ids: [1],
+            },
+            {
                id: 4,
                title: "Feedback Widget | ReactJs",
                img: work4,
                link: 'https://feedbacksan-nlw.vercel.app/',
                genre_ids: [1],
-            },
-            {
-               id: 6,
-               title: "To do List | JS",
-               img: work6,
-               link: 'https://santasks.netlify.app/',
-               genre_ids: [2],
             },
             {
                id: 3,

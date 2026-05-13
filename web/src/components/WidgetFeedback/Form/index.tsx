@@ -68,7 +68,7 @@ export function WidgetForm() {
       )}
 
       <footer className="text-sm text-gray-400 font-semibold">
-         {t('footer_feedback')} <a className="underline underline-offset-2" href="https://www.sancruz.netlify.app">Sancruz</a>
+         {t('footer_feedback')} SanCruz
       </footer>
    </div>
 

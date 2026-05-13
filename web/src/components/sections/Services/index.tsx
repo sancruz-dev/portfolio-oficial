@@ -63,7 +63,7 @@ export function Services() {
    // useEffect é chamado assim que o componente é montado
    useEffect(() => {
       // Define a mensagem para ser exibida
-      setModalIsOpen(true);
+      setModalIsOpen(false); // atualmente sem uso
 
       // Define um timer para esconder a mensagem após 5 segundos
       const timer = setTimeout(() => {
@@ -216,9 +216,9 @@ export function Services() {
 
          <div className="services__card">
             <h3 className="services__title">
-               Marketing
+               Cloud
                <br />
-               Digital
+               & DevOps
             </h3>
 
             <span className="services__button" onClick={handleOpenModal3}>
@@ -232,7 +232,7 @@ export function Services() {
             >
                <i className='bx bx-x services__modal-close' onClick={handleCloseModal}></i>
 
-               <h3 className="services__modal-title">Marketing Digital</h3>
+               <h3 className="services__modal-title">Cloud & DevOps</h3>
                <p className="services__modal-description">
                   {t('desc_modal3_services')}
                </p>
