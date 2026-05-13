@@ -38,6 +38,8 @@ export function Footer() {
 
             <span className="footer__copy">
                &#169; Sancruz-dev. {t('copyRight_footer')}
+               <br />
+               {t('copyRight2_footer')}
             </span>
          </div>
       </footer>
