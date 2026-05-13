@@ -48,6 +48,13 @@ export function Filter({
          className={activeGenre === 2
             ? 'work__item active-work'
             : 'work__item'}>
+         Back-End / Cloud
+      </button>
+      <button
+         onClick={() => setActiveGenre(3)}
+         className={activeGenre === 3
+            ? 'work__item active-work'
+            : 'work__item'}>
          Front-End / Design
       </button>
    </div>
