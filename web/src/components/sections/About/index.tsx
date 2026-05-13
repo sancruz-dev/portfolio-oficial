@@ -27,7 +27,7 @@ export function About() {
                </div>
 
                <div className="about__box">
-                  <i className='bx bx-support about__icon'></i>
+                  <i className='bx bx-cloud about__icon'></i>
                   <h3 className="about__title">{t('title_box3_SobreMim')}</h3>
                   <span className="about__subtitle">{t('subtt_box3_SobreMim')}</span>
                </div>

@@ -3,6 +3,7 @@
       "title_modalaviso":"Notice! Website under maintenance 👷🏻‍♂️🛠",
       "txt1_modalaviso":"Some information about me is out of date, and the feedback feature is currently not working as some features are being fixed....",
       "txt2_modalaviso":"I ask for a little patience 🙏🏻 the page will soon be back to normal!",
+
       "hello": "Hello! I'm",
       "systemsDev": "Full Stack Developer",
       "whereYouCan": "where you can find anything you want.",
@@ -28,32 +29,10 @@
 
       "title_sec_skills": "Technical level",
       "subtt_sec_skills": "My experience",
-      "subtt_skillsCard1_skills": "More than 3 years",
-      "subtt_skillsCard2_skills": "More than 3 years",
-      "subtt_skillsCard3_skills": "More than 2 year",
-      "subtt_skillsCard4_skills": "(methods, performance and practice)",
-      "skillCard1_skillNumber1_skills": "advanced",
-      "skillCard1_skillNumber2_skills": "median/advanced",
-      "skillCard1_skillNumber3_skills": "median/advanced",
-      "skillCard1_skillNumber4_skills": "median/advanced",
-      "skillCard1_skillNumber5_skills": "median",
-      
-      "skillCard2_skillNumber1_skills": "median/advanced",
-      "skillCard2_skillNumber2_skills": "median",
-      "skillCard2_skillNumber3_skills": "median",
-      "skillCard2_skillNumber4_skills": "basic/median",
-      "skillCard2_skillNumber5_skills": "basic/median",
-      "skillCard2_skillNumber6_skills": "basic/median",
-      
-      "skillCard3_skillNumber1_skills": "median/advanced",
-      "skillCard3_skillNumber2_skills": "median",
-      "skillCard3_skillNumber3_skills": "basic/median",
-      
-      "skillCard4_skillNumber1_skills": "median/advanced",
-      "skillCard4_skillNumber2_skills": "median",
-      "skillCard4_skillNumber3_skills": "median",
-      "skillCard4_skillNumber4_skills": "basic/median",
-      "skillCard4_skillNumber5_skills": "basic",
+      "title_skillsCard1_skills": "Languages & Framewoks",
+      "title_skillsCard2_skills": "Cloud & DevOps",
+      "title_skillsCard3_skills": "Architecture & Practices",
+      "title_skillsCard4_skills": "Tools & Methodologies",
 
       
       "subtt_sec_services": "My services",

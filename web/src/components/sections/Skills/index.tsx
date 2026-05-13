@@ -63,8 +63,8 @@ export function Skills() {
                <div className="skills__header" onClick={toggleSkillContent1}>
                   <i className='bx bx-code-alt skills__icon'></i>
                   <div>
-                     <h3 className="skills__titles">Frontend</h3>
-                     <span className="skills__subtitle">{t('subtt_skillsCard1_skills')}</span>
+                     <h3 className="skills__titles">{t('title_skillsCard1_skills')}</h3>
+                     <span className="skills__subtitle">  HTML/CSS • React • .NET...  </span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -73,51 +73,64 @@ export function Skills() {
                <div className="skills__list grid">
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">HTML/CSS</h3>
-                        <span className="skills__number">{t('skillCard1_skillNumber1_skills')}</span>
+                        <h3 className="skills__name">HTML5/CSS3</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__html"></span>
-                     </div>
-                  </div>
-
-                  <div className="skills__data">
-                     <div className="skills__titles">
-                        <h3 className="skills__name">Sass/Compass</h3>
-                        <span className="skills__number">{t('skillCard1_skillNumber2_skills')}</span>
-                     </div>
-                     <div className="skills__bar">
-                        <span className="skills__percentage skills__sasscompass"></span>
+                        <span className="skills__percentage skills__1"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
                         <h3 className="skills__name">Javascript</h3>
-                        <span className="skills__number">{t('skillCard1_skillNumber3_skills')}</span>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__js"></span>
+                        <span className="skills__percentage skills__2"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">React Js</h3>
-                        <span className="skills__number">{t('skillCard1_skillNumber4_skills')}</span>
+                        <h3 className="skills__name">Typescript</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__react"></span>
+                        <span className="skills__percentage skills__3"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">React Native</h3>
-                        <span className="skills__number">{t('skillCard1_skillNumber5_skills')}</span>
+                        <h3 className="skills__name">React</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__rn"></span>
+                        <span className="skills__percentage skills__4"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Angular</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__5"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">SQL</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__6"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">.NET (C#)</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__7"></span>
                      </div>
                   </div>
 
@@ -126,10 +139,10 @@ export function Skills() {
             {/* <!--==================== SKILLS 2 ====================--> */}
             <div className={`skills__content ${backendClass}`}>
                <div className="skills__header" onClick={toggleSkillContent2}>
-                  <i className='bx bx-server skills__icon'></i>
+                  <i className='bx bx-cloud skills__icon'></i>
                   <div>
-                     <h3 className="skills__titles">Backend</h3>
-                     <span className="skills__subtitle">{t('subtt_skillsCard2_skills')}</span>
+                     <h3 className="skills__titles">{t('title_skillsCard2_skills')}</h3>
+                     <span className="skills__subtitle">  Azure • Oracle • CI/CD... </span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -139,61 +152,73 @@ export function Skills() {
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Spring</h3>
-                        <span className="skills__number">{t('skillCard2_skillNumber1_skills')}</span>
+                        <h3 className="skills__name">Azure</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__spring"></span>
+                        <span className="skills__percentage skills__8"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">PostgreSQL</h3>
-                        <span className="skills__number">{t('skillCard2_skillNumber2_skills')}</span>
+                        <h3 className="skills__name">Azure DevOps</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__postgresql"></span>
+                        <span className="skills__percentage skills__9"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Java</h3>
-                        <span className="skills__number">{t('skillCard2_skillNumber3_skills')}</span>
+                        <h3 className="skills__name">Oracle Cloud Infrastructure</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__java"></span>
+                        <span className="skills__percentage skills__10"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">BD e SQL</h3>
-                        <span className="skills__number">{t('skillCard2_skillNumber4_skills')}</span>
+                        <h3 className="skills__name">Oracle Integration Cloud</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__bdsql"></span>
+                        <span className="skills__percentage skills__11"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Node Js</h3>
-                        <span className="skills__number">{t('skillCard2_skillNumber5_skills')}</span>
+                        <h3 className="skills__name">Visual Builder Cloud Service (Oracle)</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__node"></span>
+                        <span className="skills__percentage skills__12"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">PHP</h3>
-                        <span className="skills__number">{t('skillCard2_skillNumber6_skills')}</span>
+                        <h3 className="skills__name">CI/CD</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__php"></span>
+                        <span className="skills__percentage skills__13"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Docker</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__14"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Automated Pipelines</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__15"></span>
                      </div>
                   </div>
                </div>
@@ -204,10 +229,10 @@ export function Skills() {
             {/* <!--==================== SKILLS 3 ====================--> */}
             <div className={`skills__content ${designClass}`}>
                <div className="skills__header" onClick={toggleSkillContent3}>
-                  <i className='bx bx-palette skills__icon'></i>
+                  <i className='bx bx-layer skills__icon'></i>
                   <div>
-                     <h3 className="skills__titles">Designer</h3>
-                     <span className="skills__subtitle">{t('subtt_skillsCard3_skills')}</span>
+                     <h3 className="skills__titles">{t('title_skillsCard3_skills')}</h3>
+                     <span className="skills__subtitle">  API Rest • Clean Architecture • PR's...  </span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -216,31 +241,73 @@ export function Skills() {
                <div className="skills__list grid">
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Figma</h3>
-                        <span className="skills__number">{t('skillCard3_skillNumber1_skills')}</span>
+                        <h3 className="skills__name">API Rest</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__figma"></span>
+                        <span className="skills__percentage skills__16"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Canva</h3>
-                        <span className="skills__number">{t('skillCard3_skillNumber2_skills')}</span>
+                        <h3 className="skills__name">SOAP</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__canva"></span>
+                        <span className="skills__percentage skills__17"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Photoshop</h3>
-                        <span className="skills__number">{t('skillCard3_skillNumber3_skills')}</span>
+                        <h3 className="skills__name">Clean Architecture</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__photoshop"></span>
+                        <span className="skills__percentage skills__18"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Automated Tests</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__19"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Web App Security</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__20"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Vulnerability Analysis</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__21"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Code Review</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__22"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Pull Request</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__23"></span>
                      </div>
                   </div>
                </div>
@@ -248,10 +315,10 @@ export function Skills() {
             {/* <!--==================== SKILLS 4 ====================--> */}
             <div className={`skills__content ${outrasClass}`}>
                <div className="skills__header" onClick={toggleSkillContent4}>
-                  <i className='bx bx-dots-horizontal-rounded skills__icon'></i>
+                  <i className='bx bx-cog skills__icon'></i>
                   <div>
-                     <h3 className="skills__titles">Outros</h3>
-                     <span className="skills__subtitle">{t('subtt_skillsCard4_skills')}</span>
+                     <h3 className="skills__titles">{t('title_skillsCard4_skills')}</h3>
+                     <span className="skills__subtitle">  PostgreSQL • Git • Jira...  </span>
                   </div>
 
                   <i className="bx bx-chevron-down skills__arrow"></i>
@@ -260,51 +327,73 @@ export function Skills() {
                <div className="skills__list grid">
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Git e Github</h3>
-                        <span className="skills__number">{t('skillCard4_skillNumber1_skills')}</span>
+                        <h3 className="skills__name">PostgreSQL</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__gitgithub"></span>
+                        <span className="skills__percentage skills__24"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">CI/CD</h3>
-                        <span className="skills__number">{t('skillCard4_skillNumber2_skills')}</span>
+                        <h3 className="skills__name">SQL Developer</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__cicd"></span>
+                        <span className="skills__percentage skills__25"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">POO</h3>
-                        <span className="skills__number">{t('skillCard4_skillNumber3_skills')}</span>
+                        <h3 className="skills__name">Git/GitHub</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__poo"></span>
+                        <span className="skills__percentage skills__26"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Gulp Js</h3>
-                        <span className="skills__number">{t('skillCard4_skillNumber4_skills')}</span>
+                        <h3 className="skills__name">Design & Prototyping (Figma)</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__gulp"></span>
+                        <span className="skills__percentage skills__27"></span>
                      </div>
                   </div>
 
                   <div className="skills__data">
                      <div className="skills__titles">
-                        <h3 className="skills__name">Babel + Webpack</h3>
-                        <span className="skills__number">{t('skillCard4_skillNumber5_skills')}</span>
+                        <h3 className="skills__name">Agile Methodology (Kanban & Scrum)</h3>
                      </div>
                      <div className="skills__bar">
-                        <span className="skills__percentage skills__bw"></span>
+                        <span className="skills__percentage skills__28"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Jira</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__29"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Trello</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__30"></span>
+                     </div>
+                  </div>
+
+                  <div className="skills__data">
+                     <div className="skills__titles">
+                        <h3 className="skills__name">Vite</h3>
+                     </div>
+                     <div className="skills__bar">
+                        <span className="skills__percentage skills__31"></span>
                      </div>
                   </div>
                </div>

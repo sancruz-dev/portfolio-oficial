@@ -796,92 +796,128 @@ body.ReactModal__Body--open {
     filter: brightness(0.5);
   }
 }
-.skills__html {
-  width: 90%;
+.skills__1 {
+  width: 95%;
 }
 
-.skills__sasscompass {
+.skills__2 {
   width: 80%;
 }
 
-.skills__js {
+.skills__3 {
   width: 70%;
 }
 
-.skills__react {
+.skills__4 {
   width: 70%;
 }
 
-.skills__rn {
-  width: 50%;
-}
-
-.skills__postgrebd {
-  width: 60%;
-}
-
-.skills__postgresql {
-  width: 60%;
-}
-
-.skills__bdsql {
-  width: 40%;
-}
-
-.skills__spring {
-  width: 70%;
-}
-
-.skills__node {
-  width: 40%;
-}
-
-.skills__tsorm {
-  width: 70%;
-}
-
-.skills__java {
-  width: 50%;
-}
-
-.skills__php {
+.skills__5 {
   width: 30%;
 }
 
-.skills__figma {
-  width: 65%;
-}
-
-.skills__canva {
-  width: 60%;
-}
-
-.skills__photoshop {
-  width: 40%;
-}
-
-.skills__gitgithub {
-  width: 80%;
-}
-
-.skills__cicd {
-  width: 60%;
-}
-
-.skills__performance {
-  width: 60%;
-}
-
-.skills__poo {
+.skills__6 {
   width: 50%;
 }
 
-.skills__gulp {
+.skills__7 {
+  width: 65%;
+}
+
+.skills__8 {
+  width: 65%;
+}
+
+.skills__9 {
   width: 40%;
 }
 
-.skills__bw {
-  width: 20%;
+.skills__10 {
+  width: 65%;
+}
+
+.skills__11 {
+  width: 90%;
+}
+
+.skills__12 {
+  width: 98%;
+}
+
+.skills__13 {
+  width: 65%;
+}
+
+.skills__14 {
+  width: 50%;
+}
+
+.skills__15 {
+  width: 40%;
+}
+
+.skills__16 {
+  width: 90%;
+}
+
+.skills__17 {
+  width: 30%;
+}
+
+.skills__18 {
+  width: 70%;
+}
+
+.skills__19 {
+  width: 30%;
+}
+
+.skills__20 {
+  width: 65%;
+}
+
+.skills__21 {
+  width: 40%;
+}
+
+.skills__22 {
+  width: 75%;
+}
+
+.skills__23 {
+  width: 70%;
+}
+
+.skills__24 {
+  width: 75%;
+}
+
+.skills__25 {
+  width: 55%;
+}
+
+.skills__26 {
+  width: 85%;
+}
+
+.skills__27 {
+  width: 80%;
+}
+
+.skills__28 {
+  width: 75%;
+}
+
+.skills__29 {
+  width: 55%;
+}
+
+.skills__30 {
+  width: 90%;
+}
+
+.skills__31 {
+  width: 65%;
 }
 
 .services__container {

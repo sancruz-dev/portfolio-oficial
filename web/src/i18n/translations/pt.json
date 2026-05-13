@@ -3,6 +3,7 @@
       "title_modalaviso":"Aviso! Site em manutenção 👷🏻‍♂️🛠",
       "txt1_modalaviso":"Algumas informações sobre mim estão desatualizadas, e o recurso de feedback não está funcionando no momento, pois algumas funcionalidades estão sendo corrigidas....",
       "txt2_modalaviso":"Peço encarecidamente um pouco de paciência 🙏🏻 que logo logo a página voltará ao normal!",
+
       "hello": "Olá, eu sou",
       "systemsDev": "Full Stack Developer",
       "whereYouCan": "Onde você encontra qualquer coisa que quiser.",
@@ -29,33 +30,11 @@
       
       "title_sec_skills": "Nível Técnico",
       "subtt_sec_skills": "Minha experiência",
-      "subtt_skillsCard1_skills": "Mais de 3 anos",
-      "subtt_skillsCard2_skills": "Mais de 3 anos",
-      "subtt_skillsCard3_skills": "Mais de 2 anos",
-      "subtt_skillsCard4_skills": "(Métodos, performance e prática)",
+      "title_skillsCard1_skills": "Linguagens & Framewoks",
+      "title_skillsCard2_skills": "Nuvem & DevOps",
+      "title_skillsCard3_skills": "Arquitetura & Práticas",
+      "title_skillsCard4_skills": "Ferramentas & Metodologias",
       
-      "skillCard1_skillNumber1_skills": "avançado",
-      "skillCard1_skillNumber2_skills": "mediano/avançado",
-      "skillCard1_skillNumber3_skills": "mediano/avançado",
-      "skillCard1_skillNumber4_skills": "mediano/avançado",
-      "skillCard1_skillNumber5_skills": "mediano",
-
-      "skillCard2_skillNumber1_skills": "mediano/avançado",
-      "skillCard2_skillNumber2_skills": "mediano",
-      "skillCard2_skillNumber3_skills": "mediano",
-      "skillCard2_skillNumber4_skills": "básico/mediano",
-      "skillCard2_skillNumber5_skills": "básico/mediano",
-      "skillCard2_skillNumber6_skills": "básico/mediano",
-      
-      "skillCard3_skillNumber1_skills": "mediano/avançado",
-      "skillCard3_skillNumber2_skills": "mediano",
-      "skillCard3_skillNumber3_skills": "básico/mediano",
-      
-      "skillCard4_skillNumber1_skills": "mediano/avançado",
-      "skillCard4_skillNumber2_skills": "mediano",
-      "skillCard4_skillNumber3_skills": "mediano",
-      "skillCard4_skillNumber4_skills": "básico/mediano",
-      "skillCard4_skillNumber5_skills": "básico",
 
       "subtt_sec_services": "Meus serviços",
       "title_sec_services": "O que Ofereço",
