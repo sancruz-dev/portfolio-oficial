@@ -5,7 +5,7 @@ import { Filter } from './Filter'
 import { ProjectCard } from './ProjectCard'
 
 import work1 from '../../../assets/img/Work_imgs/myleetcode.png'
-import work2 from '../../../assets/img/Work_imgs/ECommerceRivierTCC.png'
+import work2 from '../../../assets/img/Work_imgs/ctc.png'
 import work3 from '../../../assets/img/Work_imgs/sancruzblog.png'
 import work4 from '../../../assets/img/Work_imgs/san-notes.png'
 import work5 from '../../../assets/img/Work_imgs/calcJsPw.png'
@@ -80,10 +80,10 @@ export function Work() {
             },
             {
                id: 2,
-               title: "E-Commerce Rivier - TCC | PHP",
+               title: "Estoque CTC | Figma",
                img: work2,
-               link: 'https://rivieraliancas.com.br/',
-               genre_ids: [1],
+               link: 'https://www.figma.com/proto/k8NY3fSUjVChOP0zO4L0an?node-id=0-1&t=mcmu8b6RBF4gfTcg-6',
+               genre_ids: [3],
             },
          ]
       }
